@@ -1,0 +1,367 @@
+/* Education Hero Section */
+.education-hero {
+    background: linear-gradient(135deg, #1a2b4e 0%, #1e3c72 100%);
+    padding: 80px 20px;
+    color: white;
+    min-height: 80vh;
+    display: flex;
+    align-items: center;
+}
+
+.hero-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.domain-icon {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.domain-icon i {
+    color: #00A0E3;
+    font-size: 24px;
+}
+
+.domain-icon span {
+    color: #00A0E3;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.education-hero h1 {
+    font-size: 3.8rem;
+    line-height: 1.2;
+    margin-bottom: 30px;
+    font-weight: 700;
+}
+
+.education-hero p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+    line-height: 1.6;
+}
+
+.contact-btn {
+    display: inline-block;
+    padding: 15px 30px;
+    background: #00A0E3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1rem;
+    transition: all 0.3s ease;
+}
+
+.contact-btn:hover {
+    background: #0082b3;
+    transform: translateY(-2px);
+}
+
+/* Hero Image Section */
+.hero-image-section {
+    width: 100%;
+    height: 600px;
+    position: relative;
+    overflow: hidden;
+    background: #f8f9fa;
+    padding: 40px 0;
+}
+
+.hero-image-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    margin: 0 auto;
+    position: relative;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.hero-main-image {
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+    object-position: left;
+    border-radius: 20px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+}
+
+.image-overlay {
+    position: absolute;
+    top: 0;
+    left: 20px;
+    width: 80%;
+    height: 100%;
+    background: linear-gradient(180deg, rgba(248, 249, 250, 0) 0%, rgba(248, 249, 250, 0.1) 100%);
+    border-radius: 20px;
+}
+
+/* Features Section */
+.features-section {
+    padding: 100px 0;
+    background: #f8f9fa;
+}
+
+.features-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    text-align: center;
+}
+
+.features-container h2 {
+    font-size: 2.5rem;
+    color: #1a2b4e;
+    margin-bottom: 20px;
+}
+
+.features-container > p {
+    font-size: 1.1rem;
+    color: #666;
+    max-width: 800px;
+    margin: 0 auto 60px;
+    line-height: 1.6;
+}
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 30px;
+    margin-top: 50px;
+}
+
+.feature-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+    transition: transform 0.3s ease;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+}
+
+.feature-icon {
+    width: 60px;
+    height: 60px;
+    background: #f0f7ff;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto 20px;
+}
+
+.feature-icon i {
+    color: #00A0E3;
+    font-size: 24px;
+}
+
+.feature-card h3 {
+    color: #1a2b4e;
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+}
+
+.feature-card p {
+    color: #666;
+    line-height: 1.6;
+}
+
+/* Benefits Section */
+.benefits-section {
+    padding: 100px 0;
+    background: white;
+}
+
+.benefits-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 60px;
+    align-items: center;
+}
+
+.benefits-content h2 {
+    font-size: 2.5rem;
+    color: #1a2b4e;
+    margin-bottom: 40px;
+}
+
+.benefits-list {
+    display: grid;
+    gap: 20px;
+}
+
+.benefit-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.benefit-item i {
+    color: #00A0E3;
+    font-size: 24px;
+}
+
+.benefit-item p {
+    color: #666;
+    font-size: 1.1rem;
+    line-height: 1.6;
+}
+
+.benefits-image img {
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+/* CTA Section */
+.cta-section {
+    padding: 80px 0;
+    background: linear-gradient(135deg, #1a2b4e 0%, #1e3c72 100%);
+    color: white;
+    text-align: center;
+}
+
+.cta-container {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.cta-container h2 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+}
+
+.cta-container p {
+    font-size: 1.1rem;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.cta-button {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    padding: 15px 30px;
+    background: #00A0E3;
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    transition: all 0.3s ease;
+}
+
+.cta-button:hover {
+    background: #0082b3;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 1200px) {
+    .education-hero h1 {
+        font-size: 3.2rem;
+    }
+
+    .hero-image-container {
+        max-width: 1000px;
+    }
+}
+
+@media (max-width: 992px) {
+    .benefits-container {
+        grid-template-columns: 1fr;
+    }
+
+    .benefits-image {
+        order: -1;
+    }
+}
+
+@media (max-width: 768px) {
+    .education-hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .features-container h2,
+    .benefits-content h2,
+    .cta-container h2 {
+        font-size: 2rem;
+    }
+
+    .hero-image-section {
+        height: 400px;
+        padding: 20px 0;
+    }
+
+    .hero-image-container {
+        padding: 0 15px;
+    }
+
+    .hero-main-image {
+        width: 90%;
+    }
+
+    .image-overlay {
+        width: 90%;
+    }
+}
+
+@media (max-width: 576px) {
+    .education-hero {
+        padding: 60px 20px;
+    }
+
+    .education-hero h1 {
+        font-size: 2rem;
+    }
+
+    .feature-card {
+        padding: 20px;
+    }
+
+    .hero-image-section {
+        height: 300px;
+        padding: 15px 0;
+    }
+
+    .hero-main-image {
+        width: 100%;
+    }
+
+    .image-overlay {
+        width: 100%;
+        left: 15px;
+    }
+}
+
+.navbar .logo {
+    padding: 10px 0;
+}
+
+.navbar .logo a {
+    display: block;
+    transition: opacity 0.3s ease;
+}
+
+.navbar .logo a:hover {
+    opacity: 0.8;
+}
+
+.navbar .logo img {
+    height: 40px;
+    width: auto;
+} 

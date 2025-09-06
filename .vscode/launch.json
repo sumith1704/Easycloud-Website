@@ -1,0 +1,45 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "chrome",
+            "request": "launch",
+            "name": "Launch Chrome against localhost",
+            "url": "http://localhost:3000",
+            "webRoot": "${workspaceFolder}",
+            "sourceMaps": true,
+            "sourceMapPathOverrides": {
+                "webpack:///./~/*": "${webRoot}/node_modules/*",
+                "webpack:///./*": "${webRoot}/*",
+                "webpack:///*": "*"
+            },
+            "skipFiles": [
+                "${workspaceFolder}/node_modules/**/*.js",
+                "<node_internals>/**/*.js"
+            ]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via NPM",
+            "runtimeExecutable": "npx",
+            "runtimeArgs": ["serve"],
+            "skipFiles": ["<node_internals>/**"],
+            "sourceMaps": true,
+            "outFiles": ["${workspaceFolder}/**/*.js"]
+        },
+        {
+            "type": "node",
+            "request": "launch",
+            "name": "Launch via Python",
+            "runtimeExecutable": "python3",
+            "runtimeArgs": ["-m", "http.server", "3000"],
+            "skipFiles": ["<node_internals>/**"],
+            "sourceMaps": true,
+            "outFiles": ["${workspaceFolder}/**/*.js"]
+        }
+    ]
+}
