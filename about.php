@@ -1049,7 +1049,7 @@
 <?php include 'nav_bar.php'; ?>
 <div class="top-image">
             <div class="top-image-video-wrapper">
-                <img src="images/ecs_thumbnail.png" alt="EasyCloud Image" class="video-thumbnail" >
+                <img src="images/about_us.jpg" alt="EasyCloud Image" class="video-thumbnail" >
                 <a class="play-button" href="https://youtu.be/fwiBLLi0PXs" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
             </div>
 
