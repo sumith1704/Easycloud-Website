@@ -487,7 +487,7 @@
                 <div
                     style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
                     <img src="images/Blog Aug-08-25 (2) (1).jpg" alt="Cloud Computing Myths Blog"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Is Your BOM Ticking...?</h3>
 
                         <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">     </h3>
@@ -504,8 +504,8 @@
             <a href="blogs/quality_system.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
                     style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
-                    <img src="images/Blog Aug-08-25 (2) (1).jpg" alt="Quality Management Systems Blog"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                    <img src="images/Quality_blog.jpg" alt="Quality Management Systems Blog"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Building Effective Quality Management Systems for Small Organizations</h3>
 
                         <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">     </h3>
@@ -516,7 +516,7 @@
 
 
                     <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
-                            class="far fa-calendar-alt"></i> August 08, 2025</div>
+                            class="far fa-calendar-alt"></i> September 08, 2025</div>
                 </div>
             </a>
         </div>

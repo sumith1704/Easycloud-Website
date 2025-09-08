@@ -322,10 +322,10 @@
     <div class="blog-detail-main-flex">
         <div class="blog-detail-left">
             <h1 class="blog-detail-title">Building Effective Quality Management Systems for Small Organizations</h1>
-            <div class="blog-detail-date"><i class="far fa-calendar-alt"></i> August 08, 2025</div>
+            <div class="blog-detail-date"><i class="far fa-calendar-alt"></i> September 08, 2025</div>
         </div>
         <div class="blog-detail-right">
-            <img src="../images/app.avif" alt="Quality Management Blog" class="blog-detail-image">
+            <img src="../images/Quality_blog.jpg" alt="Quality Management Blog" class="blog-detail-image">
             <div class="blog-detail-content">
                 <h3>Quality: A Mindset, Not a Price Tag</h3>
                 <p>As the CEO of EasyCloud Software (<a href="https://www.easycloudsoftware.com" target="_blank">www.easycloudsoftware.com</a>), I’ve spent over two decades in manufacturing and service delivery, witnessing firsthand the transformative power of quality management systems (QMS). A common misconception is that quality is expensive, especially for small organizations. However, my experience tells me that quality isn’t costly, it’s a mindset, paired with the right tools, that drives efficiency and customer satisfaction.</p>
