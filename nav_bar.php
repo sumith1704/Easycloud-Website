@@ -423,7 +423,7 @@ body {
                                 <i class="fas fa-hospital item-icon"></i>
                                 <div class="item-info">
                                     <h6>HSE (Healthcare)</h6>
-                                    <p>Enhance user experience and accessibility on the go.</p>
+                                    <p>Transforming healthcare experiences through technology.</p>
                                 </div>
                             </a></li>
                         </ul>
