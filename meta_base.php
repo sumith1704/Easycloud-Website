@@ -195,7 +195,7 @@
 
             </p>
             <img src="images/meta_base_image.avif" alt="Power BI"
-                style="width: 60vw; max-width: 900px; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); margin: 2rem auto 0 auto; display: block;">
+                style="width: 60vw; max-width: 600px; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); margin: 2rem auto 0 auto; display: block;">
         </div>
     </section>
 

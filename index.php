@@ -52,14 +52,15 @@
     font-weight: 700;
 }
 
-.main-image {
-    width: 100%;
-    max-width: 800px;
-    height: auto;
-    border-radius: 10px;
-    will-change: transform;
-    transform: translateZ(0);
-}
+    .main-image {
+        width: 100%;
+        max-width: 800px;
+        height: auto;
+        border-radius: 10px;
+        will-change: transform;
+        transform: translateZ(0);
+        box-shadow: none !important;
+    }
 
 /* Reset and Base Styles */
 * {
@@ -2694,7 +2695,7 @@ body {
                 </a>
             </div>
             <div class="hero-image">
-                <img src="images/dashboard_logo.avif" alt="Analytics Dashboard" class="main-image" fetchpriority="high" loading="eager">
+                <img src="images/ecs hero.jpeg" alt="Analytics Dashboard" class="main-image" fetchpriority="high" loading="eager">
                 
             </div>
         </div>
