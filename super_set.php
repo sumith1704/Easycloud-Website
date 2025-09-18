@@ -97,7 +97,7 @@
         padding-top: 2.5rem !important;
       }
       .hero {
-        padding-top: 7rem !important;
+        padding-top: 1rem !important;
       }
     }
     
@@ -189,14 +189,14 @@
     <!-- Hero Section -->
     <section class="hero" style="padding: 4rem 0 2rem 0;">
         <div class="hero-container" style="flex-direction: column; align-items: center;">
-            <h1 style="text-align: center; margin-bottom: 1rem; color: #1a2b4e;">Elevate Your Insights with EasyCloud
+            <h1 style="text-align: center; color: #1a2b4e;">Elevate Your Insights with EasyCloud
                 and Superset</h1>
             <p style="text-align: center; max-width: 600px; color: #555; font-size: 1.15rem; margin-bottom: 2rem;">
                 Our integration with Superset transforms your data into intuitive visualizations and insights. This
                 empowers businesses to uncover hidden trends, optimize performance, and drive informed decision-making.
             </p>
             <img src="images/super_set_big.avif" alt="Power BI"
-                style="width: 60vw; max-width: 900px; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); margin: 2rem auto 0 auto; display: block;">
+                style="width: 90%; max-width: 900px; border-radius: 18px; box-shadow: 0 8px 32px rgba(0,0,0,0.10); margin: 0rem auto 0 auto; display: block;">
         </div>
     </section>
 
@@ -206,16 +206,19 @@
             style="display: flex; flex-wrap: wrap; max-width: 1200px; margin: 0 auto; gap: 2.5rem; align-items: flex-start;">
             <!-- Left Column -->
             <div style="flex: 1 1 380px; min-width: 320px; max-width: 520px;">
-                <h2 style="font-size: 2.5rem; color: #1a2b4e; font-weight: 800; margin-bottom: 1.2rem;">Why Choose
+                <h2 style="font-size: 2.5rem; color: #1a2b4e; font-weight: 800; margin-bottom: 1.2rem;text-align:center">Why Choose
                     Easycloud with Superset?</h2>
-                <p style="color: #555; font-size: 1.15rem; margin-bottom: 2rem;">We empower your organization to
+                <p style="color: #555; font-size: 1.15rem;text-align:center">We empower your organization to
                     transform raw data into actionable insights. Our tailored dashboards and real-time analytics enhance
                     decision-making, streamline operations, and drive growth, ensuring you stay ahead in a competitive
                     landscape</p>
                 
-                    <a href="contact.php">
-                    <button class="contact-btn" style="margin-bottom: 2rem;">Contact Us</button>
-                </a>
+                    <button class="contact-btn" 
+                        onclick="window.location.href='contact.php';"
+                        style="margin-bottom: 2rem;margin-left:auto;margin-right:auto;display:block;">
+                        Contact Us
+                    </button>
+
                 <img src="images/super_set_graph.avif" alt="Sales by Type"
                     style="width: 100%; border-radius: 18px; box-shadow: 0 4px 24px rgba(0,0,0,0.10); margin-bottom: 2rem;">
                 <img src="images/super_set_graph2.avif" alt="Sales by Product Group"
