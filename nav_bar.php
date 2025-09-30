@@ -195,6 +195,10 @@ body {
             .easycloud-navbar {
                 padding: 0.5rem 0 !important;
             }
+            .navbar-brand img {
+                width: 60px !important;
+                height: auto !important;
+            }
             
             .easycloud-navbar .domains-grid {
                 grid-template-columns: 1fr !important;
@@ -254,7 +258,7 @@ body {
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/index.php" aria-label="EasyCloud Home">
-                <img src="/images/main_logo.svg" alt="EasyCloud Logo" width="100" height="40" />
+                <img src="/images/main_logo.svg" alt="EasyCloud Logo" width="150" height="80" />
             </a>
 
             <!-- Mobile toggle button -->
