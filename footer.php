@@ -115,9 +115,10 @@ footer {
 /* Office Locations */
 .office-locations {
     display: grid;
-    grid-template-columns: repeat(4, 1fr);
+    grid-template-columns: repeat(3, 1fr);
     gap: 2rem;
     margin-bottom: 4rem;
+    justify-items: center;
 }
 
 .office-card {
@@ -198,7 +199,8 @@ footer {
 /* Responsive Design */
 @media (max-width: 1200px) {
     .office-locations {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: repeat(3, 1fr);
+        justify-items: center;
     }
 }
 
@@ -313,16 +315,16 @@ footer {
                     </div>
                 </div>
 
-                <div class="office-card">
+                <!-- <div class="office-card">
                     <h3>Australia Office</h3>
                     <div class="office-details">
                         <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
                         <a href="tel:+61421979860"><i class="fas fa-phone"></i> +61421979860</a>
                         <p><i class="fas fa-map-marker-alt"></i> 79 Queens Parade, Fawkner, VIC, Australia</p>
                     </div>
-                </div>
+                </div> -->
             </div>
-
+ 
             <!-- Quick Links -->
             <div class="quick-links">
                 <div class="links-column">
