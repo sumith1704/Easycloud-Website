@@ -269,6 +269,13 @@ body {
             <!-- Navigation items -->
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav mx-auto">
+                    <!-- Home Icon -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="/index.php" aria-label="Home">
+                            <i class="fas fa-home"></i>
+                        </a>
+                    </li>
+                    
                     <!-- Domains Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">

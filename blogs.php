@@ -136,6 +136,117 @@
             font-size: 0.98rem;
           }
         }
+
+        /* Mobile Share Button Styles */
+        .mobile-share-btn {
+          display: none;
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background: rgba(255, 255, 255, 0.9);
+          border: none;
+          border-radius: 50%;
+          width: 40px;
+          height: 40px;
+          align-items: center;
+          justify-content: center;
+          box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+          cursor: pointer;
+          z-index: 10;
+          transition: all 0.3s ease;
+        }
+
+        .mobile-share-btn:hover {
+          background: rgba(255, 255, 255, 1);
+          transform: scale(1.1);
+        }
+
+        .mobile-share-btn i {
+          font-size: 1.1rem;
+          color: #1a2b4e;
+        }
+
+        .share-modal {
+          display: none;
+          position: fixed;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 100%;
+          background: rgba(0, 0, 0, 0.5);
+          z-index: 1000;
+          align-items: center;
+          justify-content: center;
+        }
+
+        .share-modal-content {
+          background: white;
+          border-radius: 20px;
+          padding: 2rem;
+          margin: 1rem;
+          max-width: 350px;
+          width: 100%;
+          text-align: center;
+          position: relative;
+        }
+
+        .share-modal-close {
+          position: absolute;
+          top: 1rem;
+          right: 1rem;
+          background: none;
+          border: none;
+          font-size: 1.5rem;
+          cursor: pointer;
+          color: #666;
+        }
+
+        .share-modal h3 {
+          margin-bottom: 1.5rem;
+          color: #1a2b4e;
+          font-size: 1.3rem;
+        }
+
+        .share-buttons {
+          display: flex;
+          justify-content: center;
+          flex-wrap: wrap;
+          gap: 0.8rem;
+        }
+
+        .share-btn {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          width: 45px;
+          height: 45px;
+          border-radius: 50%;
+          text-decoration: none;
+          color: white;
+          font-size: 1.3rem;
+          transition: transform 0.3s ease;
+          min-width: 45px;
+          min-height: 45px;
+          flex-shrink: 0;
+        }
+
+        .share-btn:hover {
+          transform: scale(1.1);
+          color: white;
+        }
+
+        .share-btn.facebook { background: #1877f2; }
+        .share-btn.x { background: #000000; }
+        .share-btn.linkedin { background: #0077b5; }
+        .share-btn.instagram { background: linear-gradient(45deg, #f09433 0%,#e6683c 25%,#dc2743 50%,#cc2366 75%,#bc1888 100%); }
+        .share-btn.whatsapp { background: #25d366; }
+
+        /* Show share button only on mobile */
+        @media (max-width: 768px) {
+          .mobile-share-btn {
+            display: flex;
+          }
+        }
         .whatsapp-float-btn {
           position: fixed;
           right: 1.5rem;
@@ -222,7 +333,10 @@
             <!-- Blog Card 1 -->
             <a href="blogs/to_dispatch.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'To Dispatch Or Not To Dispatch', window.location.origin + '/blogs/to_dispatch.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/dispatch_image.avif" alt="Dispatch Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">To Dispatch
@@ -243,7 +357,10 @@
             <!-- Blog Card 2 -->
             <a href="blogs/fish_feed.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'From Fish Feed Sales To Super Sales', window.location.origin + '/blogs/fish_feed.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/fish_feed.avif" alt="Fish Feed Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">From Fish
@@ -257,7 +374,10 @@
             <!-- Blog Card 3 -->
             <a href="blogs/chaos.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'No More Prescription For Chaos', window.location.origin + '/blogs/chaos.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/choas.avif" alt="Prescription Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">No More
@@ -278,7 +398,10 @@
             <!-- Blog Card 4 -->
             <a href="blogs/milking.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Milking Success', window.location.origin + '/blogs/milking.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/milking.avif" alt="Milking Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Milking
@@ -299,7 +422,10 @@
             <!-- Blog Card 5 -->
             <a href="blogs/poultry.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Transforming Poultry Invoicing', window.location.origin + '/blogs/poultry.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/poultry.avif" alt="Poultry Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">
@@ -320,7 +446,10 @@
             <!-- Blog Card 6 -->
             <a href="blogs/capture_with_ai.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Revolutionizing Data Capture With AI', window.location.origin + '/blogs/capture_with_ai.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/ai_blog.avif" alt="AI Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">
@@ -340,8 +469,10 @@
             <!-- Blog Card 7 -->
             <a href="blogs/indian_smes.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
-
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'How ERP Software is Helping Indian SMEs Get Organized and Attract the...', window.location.origin + '/blogs/indian_smes.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/erp.avif" alt="ERP SME Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">How ERP
@@ -354,7 +485,10 @@
             <!-- Blog Card 8 -->
             <a href="blogs/construction.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'EasyCloud revolutionizing Construction Projects', window.location.origin + '/blogs/construction.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/construction_blog.avif" alt="Construction Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">EasyCloud
@@ -373,7 +507,10 @@
             <!-- Blog Card 9 -->
             <a href="blogs/critical_chan.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Critical Chain Project Management', window.location.origin + '/blogs/critical_chan.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/critical.avif" alt="Chain Project Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Critical
@@ -392,7 +529,10 @@
             <!-- Blog Card 10 -->
             <a href="blogs/extrution.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Smart ERP for Smarter Extrusion', window.location.origin + '/blogs/extrution.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/smart_erp.avif" alt="Extrusion Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Smart ERP
@@ -411,7 +551,10 @@
             <!-- Blog Card 11 -->
             <a href="blogs/real_erp.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Real Work Needs a Real ERP — That&apos;s EasyCloud', window.location.origin + '/blogs/real_erp.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/real_work.avif" alt="Real ERP Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Real Work
@@ -423,7 +566,10 @@
             <!-- Blog Card 12 -->
             <a href="blogs/labour_teams.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Track. Verify. Pay. EasyCloud for Labour Teams', window.location.origin + '/blogs/labour_teams.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/labour_teams.avif" alt="Labour Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Track.
@@ -435,7 +581,10 @@
 
             <a href="blogs/mrp.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Boosting Efficiency with Material Resource Planning (MRP)', window.location.origin + '/blogs/mrp.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/WhatsApp Image 2025-07-07 at 3.46.03 PM.jpeg" alt="Labour Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Boosting
@@ -454,7 +603,10 @@
 
             <a href="blogs/smart_erp.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Procure for Performance, Not Prestige', window.location.origin + '/blogs/smart_erp.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/WhatsApp Image 2025-07-07 at 3.47.02 PM.jpeg" alt="Labour Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Procure for
@@ -474,7 +626,10 @@
 
             <a href="blogs/myth_ten.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, '10 Cloud Computing Myths Busted: Why SMEs Are Switching to EasyCloud ERP', window.location.origin + '/blogs/myth_ten.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/20250710_1839_Confident Indian Tech Leader_simple_compose_01jzt76rkee3mscv052s6qw38m (1).png" alt="Cloud Computing Myths Blog"
                         style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">10 Cloud Computing Myths Busted: Why SMEs Are Switching to EasyCloud ERP</h3>
@@ -485,7 +640,10 @@
 
             <a href="blogs/bom.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Is Your BOM Ticking...?', window.location.origin + '/blogs/bom.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/Blog Aug-08-25 (2) (1).jpg" alt="Cloud Computing Myths Blog"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Is Your BOM Ticking...?</h3>
@@ -497,7 +655,10 @@
             </a>
             <a href="blogs/quality_system.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Building Effective Quality Management Systems for Small Organizations', window.location.origin + '/blogs/quality_system.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/Quality_blog.jpg" alt="Quality Management Systems Blog"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Building Effective Quality Management Systems for Small Organizations</h3>
@@ -515,7 +676,10 @@
             </a>
             <a href="blogs/rise_of_ai_agents.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
-                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start;">
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'The Rise of AI Agents: Revolutionizing Manufacturing with ERP and Cloud Solutions', window.location.origin + '/blogs/rise_of_ai_agents.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
                     <img src="images/20250922_1759_Futuristic Factory Innovation_simple_compose_01k5rp8y3gf9mr3xy4qm7ebq51.png" alt="AI Agents in Manufacturing Blog"
                         style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">The Rise of AI Agents: Revolutionizing Manufacturing with ERP and Cloud Solutions</h3>
@@ -534,9 +698,64 @@
         </div>
     </section>
 
+    <!-- Share Modal -->
+    <div id="shareModal" class="share-modal">
+        <div class="share-modal-content">
+            <button class="share-modal-close" onclick="closeShareModal()">&times;</button>
+            <h3>Share this blog</h3>
+            <div class="share-buttons">
+                <a href="#" class="share-btn facebook" id="facebookShare" target="_blank">
+                    <i class="fab fa-facebook-f"></i>
+                </a>
+                <a href="#" class="share-btn x" id="xShare" target="_blank">
+                    <i class="fab fa-x-twitter"></i>
+                </a>
+                <a href="#" class="share-btn linkedin" id="linkedinShare" target="_blank">
+                    <i class="fab fa-linkedin-in"></i>
+                </a>
+                <a href="#" class="share-btn instagram" id="instagramShare" target="_blank">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" class="share-btn whatsapp" id="whatsappShare" target="_blank">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+            </div>
+        </div>
+    </div>
 
   
     <?php include 'footer.php'; ?>
+
+    <script>
+        function openShareModal(event, title, url) {
+            event.preventDefault();
+            event.stopPropagation();
+            
+            const modal = document.getElementById('shareModal');
+            const encodedTitle = encodeURIComponent(title);
+            const encodedUrl = encodeURIComponent(url);
+            
+            // Update share links
+            document.getElementById('facebookShare').href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+            document.getElementById('xShare').href = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+            document.getElementById('linkedinShare').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+            document.getElementById('instagramShare').href = `https://www.instagram.com/`;
+            document.getElementById('whatsappShare').href = `https://api.whatsapp.com/send?text=${encodedTitle} ${encodedUrl}`;
+            
+            modal.style.display = 'flex';
+        }
+
+        function closeShareModal() {
+            document.getElementById('shareModal').style.display = 'none';
+        }
+
+        // Close modal when clicking outside
+        document.getElementById('shareModal').addEventListener('click', function(event) {
+            if (event.target === this) {
+                closeShareModal();
+            }
+        });
+    </script>
     
 </body>
 
