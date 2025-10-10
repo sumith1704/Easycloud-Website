@@ -267,7 +267,7 @@ body {
     <nav class="navbar navbar-expand-lg easycloud-navbar">
         <div class="container">
             <!-- Logo -->
-            <a class="navbar-brand" href="/index" aria-label="EasyCloud Home">
+            <a class="navbar-brand" href="/index.php" aria-label="EasyCloud Home">
                 <img src="/images/main_logo.svg" alt="EasyCloud Logo" width="150" height="80" />
             </a>
 
@@ -293,63 +293,63 @@ body {
                         </a>
                         <ul class="dropdown-menu domains-dropdown">
                             <div class="domains-grid">
-                                <li><a href="/industrial-engineering" class="dropdown-item-custom">
+                                <li><a href="/industrial-engineering.php" class="dropdown-item-custom">
                                     <i class="fas fa-industry item-icon"></i>
                                     <div class="item-info">
                                         <h6>Industrial Engineering</h6>
                                         <p>Make industrial processes more efficient and effective.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/bfsi" class="dropdown-item-custom">
+                                <li><a href="/bfsi.php" class="dropdown-item-custom">
                                     <i class="fas fa-landmark item-icon"></i>
                                     <div class="item-info">
                                         <h6>BFSI</h6>
                                         <p>Improve financial services and streamline operations.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/education" class="dropdown-item-custom">
+                                <li><a href="/education.php" class="dropdown-item-custom">
                                     <i class="fas fa-graduation-cap item-icon"></i>
                                     <div class="item-info">
                                         <h6>Education</h6>
                                         <p>Make teaching simpler and improve administration.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/retail" class="dropdown-item-custom">
+                                <li><a href="/retail.php" class="dropdown-item-custom">
                                     <i class="fas fa-shopping-cart item-icon"></i>
                                     <div class="item-info">
                                         <h6>Retail</h6>
                                         <p>Simplify operations and improve customer experiences.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/energy_and_utilities" class="dropdown-item-custom">
+                                <li><a href="/energy_and_utilities.php" class="dropdown-item-custom">
                                     <i class="fas fa-bolt item-icon"></i>
                                     <div class="item-info">
                                         <h6>Energy & Utilities</h6>
                                         <p>Make energy management easier and improve utility services.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/health_care" class="dropdown-item-custom">
+                                <li><a href="/health_care.php" class="dropdown-item-custom">
                                     <i class="fas fa-hospital item-icon"></i>
                                     <div class="item-info">
                                         <h6>Healthcare</h6>
                                         <p>Make patient care easier and improve health management.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/construction" class="dropdown-item-custom">
+                                <li><a href="/construction.php" class="dropdown-item-custom">
                                     <i class="fas fa-hard-hat item-icon"></i>
                                     <div class="item-info">
                                         <h6>Construction</h6>
                                         <p>Manage projects better and increase site efficiency.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/livestock" class="dropdown-item-custom">
+                                <li><a href="/livestock.php" class="dropdown-item-custom">
                                     <i class="fas fa-cow item-icon"></i>
                                     <div class="item-info">
                                         <h6>Livestock & Feed</h6>
                                         <p>Improve livestock management and make feeding more efficient.</p>
                                     </div>
                                 </a></li>
-                                <li><a href="/extrution" class="dropdown-item-custom">
+                                <li><a href="/extrution.php" class="dropdown-item-custom">
                                     <i class="fas fa-cogs item-icon"></i>
                                     <div class="item-info">
                                         <h6>Extrusion ERP</h6>
@@ -366,21 +366,21 @@ body {
                             Analytics
                         </a>
                         <ul class="dropdown-menu analytics-dropdown">
-                            <li><a href="/power_BI" class="dropdown-item-custom">
+                            <li><a href="/power_BI.php" class="dropdown-item-custom">
                                 <div class="analytics-icon" style="background: linear-gradient(45deg, #f7b733, #fc4a1a);">BI</div>
                                 <div class="item-info">
                                     <h6>Power BI</h6>
                                     <p>Turn data into insights with easy-to-use visualizations.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/super_set" class="dropdown-item-custom">
+                            <li><a href="/super_set.php" class="dropdown-item-custom">
                                 <div class="analytics-icon" style="background: linear-gradient(45deg, #667eea, #764ba2);">SS</div>
                                 <div class="item-info">
                                     <h6>Superset</h6>
                                     <p>Explore and visualize your data effortlessly.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/meta_base" class="dropdown-item-custom">
+                            <li><a href="/meta_base.php" class="dropdown-item-custom">
                                 <div class="analytics-icon" style="background: linear-gradient(45deg, #4facfe, #00f2fe);">MB</div>
                                 <div class="item-info">
                                     <h6>Metabase</h6>
@@ -396,21 +396,21 @@ body {
                             AI
                         </a>
                         <ul class="dropdown-menu ai-dropdown">
-                            <li><a href="/process_automation" class="dropdown-item-custom">
+                            <li><a href="/process_automation.php" class="dropdown-item-custom">
                                 <i class="fas fa-cogs item-icon"></i>
                                 <div class="item-info">
                                     <h6>Process Automation</h6>
                                     <p>Automate routine tasks and get more done.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/image_processing" class="dropdown-item-custom">
+                            <li><a href="/image_processing.php" class="dropdown-item-custom">
                                 <i class="fas fa-image item-icon"></i>
                                 <div class="item-info">
                                     <h6>Image Processing</h6>
                                     <p>Improve and analyze images easily.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/rag" class="dropdown-item-custom">
+                            <li><a href="/rag.php" class="dropdown-item-custom">
                                 <i class="fas fa-robot item-icon"></i>
                                 <div class="item-info">
                                     <h6>RAG (Retrieval-Augmented Generation)</h6>
@@ -426,21 +426,21 @@ body {
                             Apps
                         </a>
                         <ul class="dropdown-menu apps-dropdown">
-                            <li><a href="/pos" class="dropdown-item-custom">
+                            <li><a href="/pos.php" class="dropdown-item-custom">
                                 <i class="fas fa-cash-register item-icon"></i>
                                 <div class="item-info">
                                     <h6>POS (Point Of Sales)</h6>
                                     <p>Revolutionize your sales operations with EasyCloud's POS system.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/mobile_app" class="dropdown-item-custom">
+                            <li><a href="/mobile_app.php" class="dropdown-item-custom">
                                 <i class="fas fa-mobile-screen-button item-icon"></i>
                                 <div class="item-info">
                                     <h6>Mobile Apps</h6>
                                     <p>Enhance user experience and accessibility on the go.</p>
                                 </div>
                             </a></li>
-                            <li><a href="/hse" class="dropdown-item-custom">
+                            <li><a href="/hse.php" class="dropdown-item-custom">
                                 <i class="fas fa-hospital item-icon"></i>
                                 <div class="item-info">
                                     <h6>HSE (Healthcare)</h6>
@@ -452,13 +452,13 @@ body {
 
                     <!-- Regular Nav Items -->
                     <li class="nav-item"><a class="nav-link" href="/blogs.php">Blogs</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/our_process">Our Processes</a></li>
-                    <li class="nav-item"><a class="nav-link" href="/about">About Us</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/our_process.php">Our Processes</a></li>
+                    <li class="nav-item"><a class="nav-link" href="/about.php">About Us</a></li>
                 </ul>
 
                 <!-- Contact Button -->
                 <div class="d-flex">
-                    <a href="/contact">
+                    <a href="/contact.php">
                         <button class="contact-btn">
                             <i class="fas fa-envelope me-2"></i>Contact Us
                         </button>
