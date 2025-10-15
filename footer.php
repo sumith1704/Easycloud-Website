@@ -407,18 +407,45 @@ footer {
 <?php
 /**
  * Auto-includes: Location Detection, Cookie Consent, Share Button
- * Efficient loading order for optimal performance
+ * Universal paths that work on both localhost AND live server
  */
 
-// 1. Location Detection (Server-side, instant)
-if (file_exists(__DIR__ . '/includes/location-detector.php')) {
-    include_once __DIR__ . '/includes/location-detector.php';
+// Function to safely include files with multiple fallback strategies
+function safeInclude($relativePath, $useOnce = true) {
+    // Strategy 1: Document root (works on most live servers)
+    if (isset($_SERVER['DOCUMENT_ROOT']) && !empty($_SERVER['DOCUMENT_ROOT'])) {
+        $path = rtrim($_SERVER['DOCUMENT_ROOT'], '/') . '/' . ltrim($relativePath, '/');
+        if (file_exists($path)) {
+            return $useOnce ? @include_once $path : @include $path;
+        }
+    }
+    
+    // Strategy 2: From current script's directory going up
+    $currentDir = dirname($_SERVER['SCRIPT_FILENAME']);
+    $path = $currentDir . '/' . $relativePath;
+    if (file_exists($path)) {
+        return $useOnce ? @include_once $path : @include $path;
+    }
+    
+    // Strategy 3: One level up (for blog pages)
+    $path = dirname($currentDir) . '/' . $relativePath;
+    if (file_exists($path)) {
+        return $useOnce ? @include_once $path : @include $path;
+    }
+    
+    // Strategy 4: Direct relative path
+    if (file_exists($relativePath)) {
+        return $useOnce ? @include_once $relativePath : @include $relativePath;
+    }
+    
+    return false;
 }
 
-// 2. Cookie Consent Banner (shown on all pages)
-if (file_exists(__DIR__ . '/includes/cookie-consent.php')) {
-    include __DIR__ . '/includes/cookie-consent.php';
-}
+// 1. Location Detection (Server-side, instant)
+safeInclude('includes/location-detector.php', true);
+
+// 2. Cookie Consent Banner (shown on all pages - CRITICAL)
+safeInclude('includes/cookie-consent.php', false);
 
 // 3. Mobile Share Button - Auto-include for Blog Pages Only
 $currentPath = $_SERVER['REQUEST_URI'];
@@ -434,22 +461,15 @@ $isBlogPost = (
 
 // Include share button only on individual blog pages
 if ($isBlogPost) {
-    // Determine correct path based on current directory
-    if (file_exists(__DIR__ . '/blogs/share-button.php')) {
-        include __DIR__ . '/blogs/share-button.php';
-    } elseif (file_exists(__DIR__ . '/share-button.php')) {
-        include __DIR__ . '/share-button.php';
-    } elseif (file_exists('share-button.php')) {
-        include 'share-button.php';
-    }
+    safeInclude('blogs/share-button.php', false);
 }
 ?>
 
-<!-- Cookie Manager JavaScript -->
-<script src="<?php echo (strpos($_SERVER['SCRIPT_FILENAME'], 'blogs') !== false) ? '../js/cookie-manager.js' : 'js/cookie-manager.js'; ?>"></script>
+<!-- Cookie Manager JavaScript - Absolute path from domain root -->
+<script src="/js/cookie-manager.js"></script>
 
-<!-- Blog Tracker JavaScript (only loads after consent) -->
-<script src="<?php echo (strpos($_SERVER['SCRIPT_FILENAME'], 'blogs') !== false) ? '../js/blog-tracker.js' : 'js/blog-tracker.js'; ?>"></script>
+<!-- Blog Tracker JavaScript - Absolute path from domain root -->
+<script src="/js/blog-tracker.js"></script>
 
 </body>
 </html>

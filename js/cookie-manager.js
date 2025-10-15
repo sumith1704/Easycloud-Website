@@ -40,6 +40,9 @@
             const banner = document.getElementById('cookieConsent');
             if (banner) {
                 banner.style.display = 'block';
+                console.log('✅ Cookie banner displayed');
+            } else {
+                console.error('❌ Cookie banner element not found! Check if cookie-consent.php is included.');
             }
         },
 
@@ -48,6 +51,7 @@
             const banner = document.getElementById('cookieConsent');
             if (banner) {
                 banner.style.display = 'none';
+                console.log('Cookie banner hidden');
             }
         },
 
@@ -273,10 +277,27 @@
 
     // Initialize when DOM is ready
     if (document.readyState === 'loading') {
-        document.addEventListener('DOMContentLoaded', () => CookieManager.init());
+        document.addEventListener('DOMContentLoaded', () => {
+            console.log('🍪 Cookie Manager: DOM loaded, initializing...');
+            CookieManager.init();
+        });
     } else {
+        console.log('🍪 Cookie Manager: DOM already loaded, initializing...');
         CookieManager.init();
     }
+
+    // Additional safety check - retry initialization if banner not found
+    window.addEventListener('load', () => {
+        setTimeout(() => {
+            const banner = document.getElementById('cookieConsent');
+            if (!banner) {
+                console.error('❌ CRITICAL: Cookie banner HTML not found after page load!');
+                console.error('Please check if includes/cookie-consent.php is properly included in footer.php');
+            } else {
+                console.log('✅ Cookie banner HTML element found');
+            }
+        }, 100);
+    });
 
     // Expose for external access
     window.EasyCloudCookieManager = CookieManager;
