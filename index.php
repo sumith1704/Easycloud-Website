@@ -12,7 +12,6 @@
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
     <!-- <link rel="stylesheet" href="styles.css"> -->
-    <link rel="stylesheet" href="domains-dropdown.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="marquee.css" media="print" onload="this.media='all'">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" media="print" onload="this.media='all'">
     <link rel="preload" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/webfonts/fa-solid-900.woff2" as="font" type="font/woff2" crossorigin>
