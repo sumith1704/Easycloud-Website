@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <link rel="icon" type="image/png" href="images/E.png">
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Us - EasyCloud</title>
+  
+  <!-- Primary Meta Tags -->
+  <title>About EasyCloud | ERP & Business Automation Leaders</title>
+  <meta name="title" content="About EasyCloud | ERP & Business Automation Leaders">
+  <meta name="description" content="Founded in 2011, EasyCloud empowers enterprises with simple, mobile, and secure ERP solutions built for efficiency, intelligence, and digital transformation.">
+  <meta name="keywords" content="about EasyCloud, ERP company India, business automation software, AI ERP platform, ERPNext developers, ERP innovation">
+  <meta name="author" content="EasyCloud">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://easycloudsoftware.com/about.php">
+  
+  <!-- Open Graph / Facebook -->
+  <meta property="og:type" content="website">
+  <meta property="og:url" content="https://easycloudsoftware.com/about.php">
+  <meta property="og:title" content="About EasyCloud | ERP & Business Automation Leaders">
+  <meta property="og:description" content="Founded in 2011, EasyCloud empowers enterprises with simple, mobile, and secure ERP solutions built for efficiency, intelligence, and digital transformation.">
+  <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+  
+  <!-- Twitter -->
+  <meta property="twitter:card" content="summary_large_image">
+  <meta property="twitter:url" content="https://easycloudsoftware.com/about.php">
+  <meta property="twitter:title" content="About EasyCloud | ERP & Business Automation Leaders">
+  <meta property="twitter:description" content="Founded in 2011, EasyCloud empowers enterprises with simple, mobile, and secure ERP solutions built for efficiency, intelligence, and digital transformation.">
+  <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" href="images/E.png">
   <link rel="stylesheet" href="styles.css">
   <link rel="stylesheet" href="marquee.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">

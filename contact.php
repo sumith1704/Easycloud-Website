@@ -1,10 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contact Us - Easy Cloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Contact EasyCloud | Cloud ERP & Automation Experts</title>
+    <meta name="title" content="Contact EasyCloud | Cloud ERP & Automation Experts">
+    <meta name="description" content="Connect with EasyCloud for ERP implementation, automation consulting, and enterprise solutions that simplify your business operations.">
+    <meta name="keywords" content="contact EasyCloud, ERP consultation, ERPNext support, ERP services India, business automation solutions, ERP company Hyderabad">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/contact.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/contact.php">
+    <meta property="og:title" content="Contact EasyCloud | Cloud ERP & Automation Experts">
+    <meta property="og:description" content="Connect with EasyCloud for ERP implementation, automation consulting, and enterprise solutions that simplify your business operations.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/contact.php">
+    <meta property="twitter:title" content="Contact EasyCloud | Cloud ERP & Automation Experts">
+    <meta property="twitter:description" content="Connect with EasyCloud for ERP implementation, automation consulting, and enterprise solutions that simplify your business operations.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="contact.css">

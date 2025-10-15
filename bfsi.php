@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BFSI - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for BFSI Sector | EasyCloud</title>
+    <meta name="title" content="ERP for BFSI Sector | EasyCloud">
+    <meta name="description" content="Securely manage finance, compliance, and analytics with EasyCloud ERP built for the banking and financial services industry.">
+    <meta name="keywords" content="BFSI ERP, financial ERP software, banking ERP India, ERPNext finance, EasyCloud BFSI">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/bfsi.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/bfsi.php">
+    <meta property="og:title" content="ERP for BFSI Sector | EasyCloud">
+    <meta property="og:description" content="Securely manage finance, compliance, and analytics with EasyCloud ERP built for the banking and financial services industry.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/bfsi.php">
+    <meta property="twitter:title" content="ERP for BFSI Sector | EasyCloud">
+    <meta property="twitter:description" content="Securely manage finance, compliance, and analytics with EasyCloud ERP built for the banking and financial services industry.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

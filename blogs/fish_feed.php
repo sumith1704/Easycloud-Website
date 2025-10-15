@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fish Feed | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for Fish Feed Manufacturing | EasyCloud</title>
+    <meta name="title" content="ERP for Fish Feed Manufacturing | EasyCloud">
+    <meta name="description" content="Explore how EasyCloud ERP streamlines fish feed production, inventory tracking, and quality management in the agro industry.">
+    <meta name="keywords" content="fish feed ERP, livestock ERP, agro ERP, manufacturing automation, EasyCloud ERP">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/fish_feed.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/fish_feed.php">
+    <meta property="og:title" content="ERP for Fish Feed Manufacturing | EasyCloud">
+    <meta property="og:description" content="Explore how EasyCloud ERP streamlines fish feed production, inventory tracking, and quality management in the agro industry.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/fish_feed.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/fish_feed.php">
+    <meta property="twitter:title" content="ERP for Fish Feed Manufacturing | EasyCloud">
+    <meta property="twitter:description" content="Explore how EasyCloud ERP streamlines fish feed production, inventory tracking, and quality management in the agro industry.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/fish_feed.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

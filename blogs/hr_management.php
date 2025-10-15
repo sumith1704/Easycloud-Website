@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>HR Management | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>HR Management ERP Software | EasyCloud</title>
+    <meta name="title" content="HR Management ERP Software | EasyCloud">
+    <meta name="description" content="Automate HR workflows, payroll, and performance tracking using EasyCloud ERP's human resource module.">
+    <meta name="keywords" content="HR ERP, payroll ERP, workforce management, EasyCloud ERP">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/hr_management.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/hr_management.php">
+    <meta property="og:title" content="HR Management ERP Software | EasyCloud">
+    <meta property="og:description" content="Automate HR workflows, payroll, and performance tracking using EasyCloud ERP's human resource module.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/hr_management.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/hr_management.php">
+    <meta property="twitter:title" content="HR Management ERP Software | EasyCloud">
+    <meta property="twitter:description" content="Automate HR workflows, payroll, and performance tracking using EasyCloud ERP's human resource module.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/hr_management.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

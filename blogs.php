@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Blogs - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP & Automation Insights | EasyCloud Blog</title>
+    <meta name="title" content="ERP & Automation Insights | EasyCloud Blog">
+    <meta name="description" content="Stay ahead with EasyCloud's insights on ERP, AI, and cloud automation trends transforming manufacturing, retail, and finance industries.">
+    <meta name="keywords" content="ERP blog, business automation trends, AI in ERP, cloud ERP insights, digital transformation blog, EasyCloud updates">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs.php">
+    <meta property="og:title" content="ERP & Automation Insights | EasyCloud Blog">
+    <meta property="og:description" content="Stay ahead with EasyCloud's insights on ERP, AI, and cloud automation trends transforming manufacturing, retail, and finance industries.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs.php">
+    <meta property="twitter:title" content="ERP & Automation Insights | EasyCloud Blog">
+    <meta property="twitter:description" content="Stay ahead with EasyCloud's insights on ERP, AI, and cloud automation trends transforming manufacturing, retail, and finance industries.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

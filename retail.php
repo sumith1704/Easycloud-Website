@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Retail - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Retail ERP & Cloud POS Solutions | EasyCloud</title>
+    <meta name="title" content="Retail ERP & Cloud POS Solutions | EasyCloud">
+    <meta name="description" content="EasyCloud's retail ERP simplifies billing, stock control, and multi-branch operations with mobile-first, cloud-based tools.">
+    <meta name="keywords" content="retail ERP, cloud POS, inventory management ERP, retail automation, EasyCloud retail ERP">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/retail.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/retail.php">
+    <meta property="og:title" content="Retail ERP & Cloud POS Solutions | EasyCloud">
+    <meta property="og:description" content="EasyCloud's retail ERP simplifies billing, stock control, and multi-branch operations with mobile-first, cloud-based tools.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/retail.php">
+    <meta property="twitter:title" content="Retail ERP & Cloud POS Solutions | EasyCloud">
+    <meta property="twitter:description" content="EasyCloud's retail ERP simplifies billing, stock control, and multi-branch operations with mobile-first, cloud-based tools.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

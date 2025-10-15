@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>MRP | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Material Resource Planning (MRP) ERP | EasyCloud</title>
+    <meta name="title" content="Material Resource Planning (MRP) ERP | EasyCloud">
+    <meta name="description" content="EasyCloud ERP brings automation to MRP with precise inventory, demand, and production planning tools.">
+    <meta name="keywords" content="MRP ERP, material planning software, manufacturing ERP, EasyCloud">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/mrp.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/mrp.php">
+    <meta property="og:title" content="Material Resource Planning (MRP) ERP | EasyCloud">
+    <meta property="og:description" content="EasyCloud ERP brings automation to MRP with precise inventory, demand, and production planning tools.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/mrp.php">
+    <meta property="twitter:title" content="Material Resource Planning (MRP) ERP | EasyCloud">
+    <meta property="twitter:description" content="EasyCloud ERP brings automation to MRP with precise inventory, demand, and production planning tools.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Chain And Logistics | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for Supply Chain & Logistics | EasyCloud</title>
+    <meta name="title" content="ERP for Supply Chain & Logistics | EasyCloud">
+    <meta name="description" content="Optimize logistics, warehousing, and supply chain workflows with EasyCloud's intelligent ERP.">
+    <meta name="keywords" content="supply chain ERP, logistics ERP, warehouse automation, EasyCloud">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/chain_and_logistics.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/chain_and_logistics.php">
+    <meta property="og:title" content="ERP for Supply Chain & Logistics | EasyCloud">
+    <meta property="og:description" content="Optimize logistics, warehousing, and supply chain workflows with EasyCloud's intelligent ERP.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/logistics.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/chain_and_logistics.php">
+    <meta property="twitter:title" content="ERP for Supply Chain & Logistics | EasyCloud">
+    <meta property="twitter:description" content="Optimize logistics, warehousing, and supply chain workflows with EasyCloud's intelligent ERP.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/logistics.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

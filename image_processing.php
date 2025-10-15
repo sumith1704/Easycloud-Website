@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Image Processing - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>AI Image Processing Solutions | EasyCloud</title>
+    <meta name="title" content="AI Image Processing Solutions | EasyCloud">
+    <meta name="description" content="Leverage AI to analyze and automate image-based operations with EasyCloud's intelligent image processing tools.">
+    <meta name="keywords" content="AI image processing, computer vision ERP, image automation, visual data analysis, EasyCloud AI, smart ERP tools">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/image_processing.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/image_processing.php">
+    <meta property="og:title" content="AI Image Processing Solutions | EasyCloud">
+    <meta property="og:description" content="Leverage AI to analyze and automate image-based operations with EasyCloud's intelligent image processing tools.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/image_processing.php">
+    <meta property="twitter:title" content="AI Image Processing Solutions | EasyCloud">
+    <meta property="twitter:description" content="Leverage AI to analyze and automate image-based operations with EasyCloud's intelligent image processing tools.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

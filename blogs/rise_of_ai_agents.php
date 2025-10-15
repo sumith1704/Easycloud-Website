@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>The Rise of AI Agents: Revolutionizing Manufacturing with ERP and Cloud Solutions | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Rise of AI Agents in ERP | Future of Automation | EasyCloud</title>
+    <meta name="title" content="Rise of AI Agents in ERP | Future of Automation | EasyCloud">
+    <meta name="description" content="Explore how AI agents are revolutionizing ERP and how EasyCloud is leading the shift toward autonomous, intelligent systems.">
+    <meta name="keywords" content="AI agents ERP, future of ERP, ERP automation, EasyCloud AI">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/rise_of_ai_agents.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/rise_of_ai_agents.php">
+    <meta property="og:title" content="Rise of AI Agents in ERP | Future of Automation | EasyCloud">
+    <meta property="og:description" content="Explore how AI agents are revolutionizing ERP and how EasyCloud is leading the shift toward autonomous, intelligent systems.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/rise_of_ai_agents.php">
+    <meta property="twitter:title" content="Rise of AI Agents in ERP | Future of Automation | EasyCloud">
+    <meta property="twitter:description" content="Explore how AI agents are revolutionizing ERP and how EasyCloud is leading the shift toward autonomous, intelligent systems.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

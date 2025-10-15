@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Super Set - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Apache Superset ERP Analytics | EasyCloud</title>
+    <meta name="title" content="Apache Superset ERP Analytics | EasyCloud">
+    <meta name="description" content="Visualize and analyze ERP data using Apache Superset dashboards built into EasyCloud for interactive business reporting.">
+    <meta name="keywords" content="Superset analytics, ERP dashboard, Apache Superset ERP, data visualization, EasyCloud BI, ERP reporting tools">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/super_set.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/super_set.php">
+    <meta property="og:title" content="Apache Superset ERP Analytics | EasyCloud">
+    <meta property="og:description" content="Visualize and analyze ERP data using Apache Superset dashboards built into EasyCloud for interactive business reporting.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/super_set.php">
+    <meta property="twitter:title" content="Apache Superset ERP Analytics | EasyCloud">
+    <meta property="twitter:description" content="Visualize and analyze ERP data using Apache Superset dashboards built into EasyCloud for interactive business reporting.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

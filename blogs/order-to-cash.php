@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Order To Cash | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>CRM in ERP | Customer Relationship Automation | EasyCloud</title>
+    <meta name="title" content="CRM in ERP | Customer Relationship Automation | EasyCloud">
+    <meta name="description" content="Strengthen customer engagement with EasyCloud ERP's CRM integration for sales tracking and service automation.">
+    <meta name="keywords" content="CRM ERP, customer management, ERP CRM integration, EasyCloud CRM">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/order-to-cash.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/order-to-cash.php">
+    <meta property="og:title" content="CRM in ERP | Customer Relationship Automation | EasyCloud">
+    <meta property="og:description" content="Strengthen customer engagement with EasyCloud ERP's CRM integration for sales tracking and service automation.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/images_order.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/order-to-cash.php">
+    <meta property="twitter:title" content="CRM in ERP | Customer Relationship Automation | EasyCloud">
+    <meta property="twitter:description" content="Strengthen customer engagement with EasyCloud ERP's CRM integration for sales tracking and service automation.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/images_order.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

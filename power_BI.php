@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Power BI - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Power BI Dashboards for ERP Insights | EasyCloud</title>
+    <meta name="title" content="Power BI Dashboards for ERP Insights | EasyCloud">
+    <meta name="description" content="Integrate Power BI with EasyCloud ERP for real-time data visualization and smarter business decision-making.">
+    <meta name="keywords" content="Power BI ERP, business intelligence ERP, analytics dashboards, Power BI India, EasyCloud analytics, data insights">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/power_BI.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/power_BI.php">
+    <meta property="og:title" content="Power BI Dashboards for ERP Insights | EasyCloud">
+    <meta property="og:description" content="Integrate Power BI with EasyCloud ERP for real-time data visualization and smarter business decision-making.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/power_BI.php">
+    <meta property="twitter:title" content="Power BI Dashboards for ERP Insights | EasyCloud">
+    <meta property="twitter:description" content="Integrate Power BI with EasyCloud ERP for real-time data visualization and smarter business decision-making.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

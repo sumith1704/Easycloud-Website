@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Process Automation - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>AI-Driven Process Automation | EasyCloud</title>
+    <meta name="title" content="AI-Driven Process Automation | EasyCloud">
+    <meta name="description" content="Automate workflows and decisions with EasyCloud's AI-powered process automation tools designed for agile, data-driven enterprises.">
+    <meta name="keywords" content="process automation, AI workflow automation, ERP automation, business process ERP, robotic automation, EasyCloud AI">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/process_automation.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/process_automation.php">
+    <meta property="og:title" content="AI-Driven Process Automation | EasyCloud">
+    <meta property="og:description" content="Automate workflows and decisions with EasyCloud's AI-powered process automation tools designed for agile, data-driven enterprises.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/process_automation.php">
+    <meta property="twitter:title" content="AI-Driven Process Automation | EasyCloud">
+    <meta property="twitter:description" content="Automate workflows and decisions with EasyCloud's AI-powered process automation tools designed for agile, data-driven enterprises.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

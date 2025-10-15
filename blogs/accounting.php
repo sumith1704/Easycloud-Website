@@ -3,8 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Primary Meta Tags -->
+    <title>Accounting & Financial ERP Solutions | EasyCloud</title>
+    <meta name="title" content="Accounting & Financial ERP Solutions | EasyCloud">
+    <meta name="description" content="Manage accounts, ledgers, and reports effortlessly with EasyCloud ERP's integrated finance module.">
+    <meta name="keywords" content="accounting ERP, finance ERP, ERPNext finance, EasyCloud">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/accounting.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/accounting.php">
+    <meta property="og:title" content="Accounting & Financial ERP Solutions | EasyCloud">
+    <meta property="og:description" content="Manage accounts, ledgers, and reports effortlessly with EasyCloud ERP's integrated finance module.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/accounting.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/accounting.php">
+    <meta property="twitter:title" content="Accounting & Financial ERP Solutions | EasyCloud">
+    <meta property="twitter:description" content="Manage accounts, ledgers, and reports effortlessly with EasyCloud ERP's integrated finance module.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/accounting.avif">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="../images/E.png">
-    <title>Accounting | EasyCloud Blog</title>
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

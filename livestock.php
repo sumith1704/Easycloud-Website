@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Livestock - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for Livestock & Feed Industry | EasyCloud</title>
+    <meta name="title" content="ERP for Livestock & Feed Industry | EasyCloud">
+    <meta name="description" content="Manage livestock, feed production, and supply chains with EasyCloud ERP built for dairy and agro businesses.">
+    <meta name="keywords" content="livestock ERP, dairy ERP, agro ERP, feed management software, EasyCloud agriculture ERP">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/livestock.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/livestock.php">
+    <meta property="og:title" content="ERP for Livestock & Feed Industry | EasyCloud">
+    <meta property="og:description" content="Manage livestock, feed production, and supply chains with EasyCloud ERP built for dairy and agro businesses.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/livestock.php">
+    <meta property="twitter:title" content="ERP for Livestock & Feed Industry | EasyCloud">
+    <meta property="twitter:description" content="Manage livestock, feed production, and supply chains with EasyCloud ERP built for dairy and agro businesses.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

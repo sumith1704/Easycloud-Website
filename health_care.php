@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Healthcare - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Healthcare ERP Software | Hospital Automation | EasyCloud</title>
+    <meta name="title" content="Healthcare ERP Software | Hospital Automation | EasyCloud">
+    <meta name="description" content="Streamline hospital operations, patient records, and billing with EasyCloud ERP for healthcare organizations.">
+    <meta name="keywords" content="healthcare ERP, hospital ERP software, medical ERP, ERPNext healthcare, EasyCloud health ERP">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/health_care.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/health_care.php">
+    <meta property="og:title" content="Healthcare ERP Software | Hospital Automation | EasyCloud">
+    <meta property="og:description" content="Streamline hospital operations, patient records, and billing with EasyCloud ERP for healthcare organizations.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/health_care.php">
+    <meta property="twitter:title" content="Healthcare ERP Software | Hospital Automation | EasyCloud">
+    <meta property="twitter:description" content="Streamline hospital operations, patient records, and billing with EasyCloud ERP for healthcare organizations.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

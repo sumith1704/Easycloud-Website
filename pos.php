@@ -1,11 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>POS (Point of Sale) - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Cloud POS & Retail ERP Solutions | EasyCloud</title>
+    <meta name="title" content="Cloud POS & Retail ERP Solutions | EasyCloud">
+    <meta name="description" content="Manage billing, sales, and inventory with EasyCloud POS — a cloud-based retail ERP solution that delivers mobility and real-time analytics.">
+    <meta name="keywords" content="POS ERP, retail ERP software, billing system, cloud POS India, sales management, EasyCloud POS">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/pos.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/pos.php">
+    <meta property="og:title" content="Cloud POS & Retail ERP Solutions | EasyCloud">
+    <meta property="og:description" content="Manage billing, sales, and inventory with EasyCloud POS — a cloud-based retail ERP solution that delivers mobility and real-time analytics.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/pos.php">
+    <meta property="twitter:title" content="Cloud POS & Retail ERP Solutions | EasyCloud">
+    <meta property="twitter:description" content="Manage billing, sales, and inventory with EasyCloud POS — a cloud-based retail ERP solution that delivers mobility and real-time analytics.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

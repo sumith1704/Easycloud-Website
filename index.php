@@ -3,8 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyCloud - Business Technology Solutions</title>
-    <!-- <link rel="icon" type="image/svg" href="images/EasyCloud Logo 1.svg"> -->
+    
+    <!-- Primary Meta Tags -->
+    <title>Cloud ERP & Business Automation Platform | EasyCloud</title>
+    <meta name="title" content="Cloud ERP & Business Automation Platform | EasyCloud">
+    <meta name="description" content="EasyCloud is a next-gen cloud ERP and automation platform that simplifies operations, drives growth, and empowers smarter business decisions across industries." />
+    <meta name="keywords" content="cloud ERP, business automation, AI ERP, ERPNext, ERP software India, enterprise cloud solutions, EasyCloud platform, business intelligence" />
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/">
+    <meta property="og:title" content="Cloud ERP & Business Automation Platform | EasyCloud">
+    <meta property="og:description" content="EasyCloud is a next-gen cloud ERP and automation platform that simplifies operations, drives growth, and empowers smarter business decisions across industries.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/">
+    <meta property="twitter:title" content="Cloud ERP & Business Automation Platform | EasyCloud">
+    <meta property="twitter:description" content="EasyCloud is a next-gen cloud ERP and automation platform that simplifies operations, drives growth, and empowers smarter business decisions across industries.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     <link rel="preload" href="images/dashboard_logo.avif" as="image" type="image/avif">

@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Milking | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Milking the Data | ERP for Dairy Industry | EasyCloud</title>
+    <meta name="title" content="Milking the Data | ERP for Dairy Industry | EasyCloud">
+    <meta name="description" content="Learn how EasyCloud ERP empowers dairy businesses to manage production, supply, and payments through smart data insights.">
+    <meta name="keywords" content="dairy ERP, agro ERP, milk ERP software, EasyCloud ERP, production automation">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/milking.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/milking.php">
+    <meta property="og:title" content="Milking the Data | ERP for Dairy Industry | EasyCloud">
+    <meta property="og:description" content="Learn how EasyCloud ERP empowers dairy businesses to manage production, supply, and payments through smart data insights.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/milking.php">
+    <meta property="twitter:title" content="Milking the Data | ERP for Dairy Industry | EasyCloud">
+    <meta property="twitter:description" content="Learn how EasyCloud ERP empowers dairy businesses to manage production, supply, and payments through smart data insights.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">

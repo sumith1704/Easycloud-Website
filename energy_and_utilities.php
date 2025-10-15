@@ -2,11 +2,34 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Energy & Utilities - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for Energy & Utilities Management | EasyCloud</title>
+    <meta name="title" content="ERP for Energy & Utilities Management | EasyCloud">
+    <meta name="description" content="Optimize operations and asset management with EasyCloud ERP designed for energy and utility enterprises.">
+    <meta name="keywords" content="energy ERP, utility ERP, power management ERP, EasyCloud energy software, cloud ERP utilities">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/energy_and_utilities.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/energy_and_utilities.php">
+    <meta property="og:title" content="ERP for Energy & Utilities Management | EasyCloud">
+    <meta property="og:description" content="Optimize operations and asset management with EasyCloud ERP designed for energy and utility enterprises.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/energy_and_utilities.php">
+    <meta property="twitter:title" content="ERP for Energy & Utilities Management | EasyCloud">
+    <meta property="twitter:description" content="Optimize operations and asset management with EasyCloud ERP designed for energy and utility enterprises.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

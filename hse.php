@@ -2,11 +2,35 @@
 <html lang="en">
 
 <head>
-    <link rel="icon" type="image/png" href="images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobile App - EasyCloud</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>Health, Safety & Environment (HSE) ERP | EasyCloud</title>
+    <meta name="title" content="Health, Safety & Environment (HSE) ERP | EasyCloud">
+    <meta name="description" content="Digitize HSE compliance, audits, and employee safety with EasyCloud's secure, mobile-first ERP solution for industrial environments.">
+    <meta name="keywords" content="HSE ERP, safety compliance software, health and safety ERP, audit management, EasyCloud HSE, workplace safety">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/hse.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://easycloudsoftware.com/hse.php">
+    <meta property="og:title" content="Health, Safety & Environment (HSE) ERP | EasyCloud">
+    <meta property="og:description" content="Digitize HSE compliance, audits, and employee safety with EasyCloud's secure, mobile-first ERP solution for industrial environments.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/hse.php">
+    <meta property="twitter:title" content="Health, Safety & Environment (HSE) ERP | EasyCloud">
+    <meta property="twitter:description" content="Digitize HSE compliance, audits, and employee safety with EasyCloud's secure, mobile-first ERP solution for industrial environments.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="images/E.png">
+    
     <link rel="stylesheet" href="styles.css">
     
     <link rel="stylesheet" href="marquee.css">

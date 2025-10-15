@@ -1,11 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <link rel="icon" type="image/png" href="../images/E.png">
-
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Construction | EasyCloud Blog</title>
+    
+    <!-- Primary Meta Tags -->
+    <title>ERP for Construction Projects | EasyCloud</title>
+    <meta name="title" content="ERP for Construction Projects | EasyCloud">
+    <meta name="description" content="Manage project costs, procurement, and progress with EasyCloud's construction ERP designed for efficiency.">
+    <meta name="keywords" content="construction ERP, project ERP, site management, EasyCloud ERPNext">
+    <meta name="author" content="EasyCloud">
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://easycloudsoftware.com/blogs/construction.php">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://easycloudsoftware.com/blogs/construction.php">
+    <meta property="og:title" content="ERP for Construction Projects | EasyCloud">
+    <meta property="og:description" content="Manage project costs, procurement, and progress with EasyCloud's construction ERP designed for efficiency.">
+    <meta property="og:image" content="https://easycloudsoftware.com/images/construction_blog.avif">
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:url" content="https://easycloudsoftware.com/blogs/construction.php">
+    <meta property="twitter:title" content="ERP for Construction Projects | EasyCloud">
+    <meta property="twitter:description" content="Manage project costs, procurement, and progress with EasyCloud's construction ERP designed for efficiency.">
+    <meta property="twitter:image" content="https://easycloudsoftware.com/images/construction_blog.avif">
+    
+    <!-- Favicon -->
+    <link rel="icon" type="image/png" href="../images/E.png">
+    
     <link rel="stylesheet" href="../styles.css">
     
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
