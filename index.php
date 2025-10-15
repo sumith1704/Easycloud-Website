@@ -3177,11 +3177,7 @@ body {
     
 <script>
     document.addEventListener('DOMContentLoaded', () => {
-  if ('serviceWorker' in navigator) {
-    navigator.serviceWorker.register('/sw.js').catch(console.error);
-  }
-
-  // Font loading
+  // Font loading - Improves icon rendering performance
   if ('fonts' in document) {
     Promise.all([
       document.fonts.load('1em "Font Awesome 6 Free"'),
@@ -3191,7 +3187,7 @@ body {
     });
   }
 
-  // Preload images
+  // Preload critical images - Improves LCP (Largest Contentful Paint)
   const criticalImages = [
     'images/dashboard_logo.avif',
     'images/main_logo.svg'
