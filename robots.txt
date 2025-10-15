@@ -1,0 +1,105 @@
+# robots.txt for EasyCloud Software - https://easycloudsoftware.com
+# This file tells search engine crawlers which pages they can and cannot access
+
+# ==============================================================================
+# USER-AGENT DIRECTIVES
+# ==============================================================================
+
+# Allow all search engines to crawl the entire site
+User-agent: *
+Allow: /
+
+# ==============================================================================
+# DISALLOW DIRECTIVES - Pages to exclude from indexing
+# ==============================================================================
+
+# Block access to admin/backend areas (if any exist in future)
+# Disallow: /admin/
+# Disallow: /backend/
+
+# Block access to configuration files
+Disallow: /*.php$
+
+# Block access to internal scripts and utilities
+Disallow: /router.php
+Disallow: /server.js
+
+# Block access to version control
+Disallow: /.git/
+
+# Block access to temporary files
+Disallow: /tmp/
+Disallow: /temp/
+
+# Block access to database backups (if stored on server)
+Disallow: /*.sql
+Disallow: /*.sql.gz
+
+# Block access to configuration files
+Disallow: /*.htaccess
+Disallow: /*.htpasswd
+Disallow: /*.ini
+
+# Block access to log files
+Disallow: /*.log
+
+# ==============================================================================
+# ALLOW DIRECTIVES - Explicitly allow important resources
+# ==============================================================================
+
+# Allow CSS files (important for rendering previews)
+Allow: /*.css$
+
+# Allow JavaScript files (needed for functionality)
+Allow: /*.js$
+
+# Allow image files (important for image search)
+Allow: /images/
+Allow: /*.jpg$
+Allow: /*.jpeg$
+Allow: /*.png$
+Allow: /*.gif$
+Allow: /*.svg$
+Allow: /*.webp$
+Allow: /*.avif$
+
+# Allow PDF documents (if you have any)
+Allow: /*.pdf$
+
+# ==============================================================================
+# CRAWL-DELAY (Optional - use if server is under heavy load)
+# ==============================================================================
+
+# Crawl-delay: 1
+
+# ==============================================================================
+# SITEMAP LOCATION
+# ==============================================================================
+
+# Point to your XML sitemap for better crawling
+Sitemap: https://easycloudsoftware.com/sitemap.xml
+
+# ==============================================================================
+# SPECIFIC BOT DIRECTIVES (Optional - for future use)
+# ==============================================================================
+
+# Google Image Bot - allow all images
+User-agent: Googlebot-Image
+Allow: /images/
+
+# Google Ads Bot - allow crawling for ad targeting
+User-agent: AdsBot-Google
+Allow: /
+
+# Bing Bot - allow all
+User-agent: Bingbot
+Allow: /
+
+# ==============================================================================
+# NOTES:
+# ==============================================================================
+# 1. This file should be placed in the root directory of your website
+# 2. It must be accessible at: https://easycloudsoftware.com/robots.txt
+# 3. Changes take effect when search engines re-crawl the file
+# 4. Test your robots.txt at: https://www.google.com/webmasters/tools/robots-testing-tool
+# ==============================================================================

@@ -292,7 +292,14 @@ footer {
                     <div class="office-details">
                         <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
                         <a href="tel:+919848027830"><i class="fas fa-phone"></i> +91 98480 27830</a>
-                        <a href="https://wa.me/919848027830" target="_blank" rel="noopener" class="whatsapp-chat-link"><span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span> Chat with us</a>
+                        <?php
+                        // Smart WhatsApp button - shows nearest office number
+                        $whatsappLink = isset($locationDetector) ? $locationDetector->getWhatsAppLink() : 'https://wa.me/919848027830';
+                        $locationText = isset($userLocation) ? " (Detected: {$userLocation['city']})" : "";
+                        ?>
+                        <a href="<?php echo htmlspecialchars($whatsappLink); ?>" target="_blank" rel="noopener" class="whatsapp-chat-link" title="Chat with nearest office<?php echo htmlspecialchars($locationText); ?>">
+                            <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span> Chat with us
+                        </a>
                         <p><i class="fas fa-map-marker-alt"></i> 2nd Floor, BabuKhan Millenium Center, Somajiguda, Hyderabad, Telangana, 500082</p>
                     </div>
                 </div>
@@ -396,5 +403,53 @@ footer {
             <p>&copy; 2025 EasyCloud. All Rights Reserved.</p>
         </div>
     </section>
+
+<?php
+/**
+ * Auto-includes: Location Detection, Cookie Consent, Share Button
+ * Efficient loading order for optimal performance
+ */
+
+// 1. Location Detection (Server-side, instant)
+if (file_exists(__DIR__ . '/includes/location-detector.php')) {
+    include_once __DIR__ . '/includes/location-detector.php';
+}
+
+// 2. Cookie Consent Banner (shown on all pages)
+if (file_exists(__DIR__ . '/includes/cookie-consent.php')) {
+    include __DIR__ . '/includes/cookie-consent.php';
+}
+
+// 3. Mobile Share Button - Auto-include for Blog Pages Only
+$currentPath = $_SERVER['REQUEST_URI'];
+$scriptName = basename($_SERVER['SCRIPT_FILENAME']);
+
+// Check if we're on an individual blog page
+$isBlogPost = (
+    strpos($currentPath, '/blogs/') !== false && 
+    strpos($currentPath, '/blogs.php') === false &&
+    strpos($currentPath, 'blogs.php') === false &&
+    $scriptName !== 'blogs.php'
+);
+
+// Include share button only on individual blog pages
+if ($isBlogPost) {
+    // Determine correct path based on current directory
+    if (file_exists(__DIR__ . '/blogs/share-button.php')) {
+        include __DIR__ . '/blogs/share-button.php';
+    } elseif (file_exists(__DIR__ . '/share-button.php')) {
+        include __DIR__ . '/share-button.php';
+    } elseif (file_exists('share-button.php')) {
+        include 'share-button.php';
+    }
+}
+?>
+
+<!-- Cookie Manager JavaScript -->
+<script src="<?php echo (strpos($_SERVER['SCRIPT_FILENAME'], 'blogs') !== false) ? '../js/cookie-manager.js' : 'js/cookie-manager.js'; ?>"></script>
+
+<!-- Blog Tracker JavaScript (only loads after consent) -->
+<script src="<?php echo (strpos($_SERVER['SCRIPT_FILENAME'], 'blogs') !== false) ? '../js/blog-tracker.js' : 'js/blog-tracker.js'; ?>"></script>
+
 </body>
 </html>

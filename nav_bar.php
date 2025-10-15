@@ -1,15 +1,29 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <!-- Google tag (gtag.js) -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NW9HQ2H0F"></script>
+    <!-- Google tag (gtag.js) - GDPR Compliant with Cookie Consent -->
+    <!-- Analytics will only load if user accepts analytics cookies -->
     <script>
+      // Initialize dataLayer for consent mode
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
+      
+      // Set default consent to denied (GDPR compliant)
+      gtag('consent', 'default', {
+        'analytics_storage': 'denied',
+        'ad_storage': 'denied',
+        'wait_for_update': 500
+      });
+      
+      // Initialize Google Analytics (will respect consent)
       gtag('js', new Date());
-
-      gtag('config', 'G-5NW9HQ2H0F');
+      gtag('config', 'G-5NW9HQ2H0F', {
+        'anonymize_ip': true,
+        'cookie_flags': 'SameSite=None;Secure'
+      });
     </script>
+    <!-- Load gtag.js script -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NW9HQ2H0F"></script>
     
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
