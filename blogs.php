@@ -324,26 +324,24 @@
     <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center; justify-content: center;">
 
         <!-- Blog Card -->
-        <a href="blogs/bom.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
+        <a href="blogs/sweet_shop.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
 
             <!-- Blog Image -->
-            <img src="images/Blog Aug-08-25 (2) (1).jpg" alt="BOM Blog"
+            <img src="images/Group 1000007989-min (1).png" alt="Sweet Shop Automation Blog"
                 style="width: 100%; max-width: 500px; height: auto; aspect-ratio: 500/330; object-fit: cover; border-radius: 32px; flex-shrink: 0; display:block; margin:0 auto;">
 
             <!-- Blog Content -->
             <div style="flex: 1 1 400px; min-width: 280px; max-width: 500px; margin-top:1.5rem; text-align:center; margin-left:auto; margin-right:auto;">
                 <h2 style="color: #1a2b4e; font-size: 2.3rem; font-weight: 800; margin-bottom: 1rem; line-height:1.2;">
-                    Is Your BOM Ticking...?
+                    Automating Every Bite: Swiggy, Zomato & Smart Supply Chains
                 </h2>
                 <div style="color: #888; font-size: 1rem; margin-bottom: 1rem;">
-                    <i class="far fa-calendar-alt"></i> August 08, 2025
+                    <i class="far fa-calendar-alt"></i> October 16, 2025
                 </div>
                 <p style="color: #555; font-size: 1.1rem; line-height:1.6; margin-bottom: 2rem;">
-                    Many manufacturers still use outdated systems, leading to costly delays from inefficient BOM
-                    management, scheduling, and data handling. EasyCloud’s advanced ERP solutions automate BOM generation
-                    and updates, streamline operations, and help SMBs stay agile and competitive.
+                   When a fast-growing sweet shop chain faced challenges with ingredient shortages, manual billing errors, and inconsistent product quality across outlets, they turned to EasyCloudSoftware.com for a comprehensive automation solution.
                 </p>
-                <a href="blogs/bom.php" class="contact-btn" style="text-decoration: none;">Read More</a>
+                <a href="blogs/sweet_shop.php" class="contact-btn" style="text-decoration: none;">Read More</a>
             </div>
         </a>
     </div>
@@ -353,6 +351,7 @@
     <!-- Blog Cards Grid Section -->
     <section style="max-width: 1200px; margin: 0 auto; padding-bottom: 4rem;">
         <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); gap: 2.5rem;">
+           
             <!-- Blog Card 1 -->
             <a href="blogs/to_dispatch.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
@@ -716,6 +715,20 @@
 
                     <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
                             class="far fa-calendar-alt"></i> September 22, 2025</div>
+                </div>
+            </a>
+             <!-- Blog Card - Sweet Shop (NEW) -->
+            <a href="blogs/sweet_shop.php" style="text-decoration:none;color:inherit;display:block;">
+                <div
+                    style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Automating Every Bite: Swiggy, Zomato & Smart Supply Chains', window.location.origin + '/blogs/sweet_shop.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <img src="images/Group 1000007989-min (1).png" alt="Sweet Shop Automation Blog"
+                        style="width: 90%; height: 90%; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Automating Every Bite: Swiggy, Zomato & Smart Supply Chains</h3>
+                    <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
+                            class="far fa-calendar-alt"></i> October 16, 2025</div>
                 </div>
             </a>
         </div>

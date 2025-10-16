@@ -330,6 +330,7 @@
                }
            }
            .blog-detail-video-wrapper {
+               position: relative;
                width: 100%;
                max-width: 700px;
                margin: 0 auto 0.5rem auto;
@@ -340,11 +341,53 @@
                min-height: 400px;
                background: #000;
            }
-           .blog-detail-video {
+           .blog-detail-video img {
                width: 100%;
                height: 100%;
-               border: none;
+               object-fit: cover;
                display: block;
+           }
+           .video-thumbnail {
+               position: relative;
+               width: 100%;
+               height: 100%;
+               cursor: pointer;
+               transition: transform 0.3s ease;
+           }
+           .video-thumbnail:hover {
+               transform: scale(1.02);
+           }
+           
+           /* Play button styles */
+           .play-button {
+               position: absolute;
+               top: 50%;
+               left: 50%;
+               transform: translate(-50%, -50%);
+               width: 80px;
+               height: 80px;
+               background: rgba(26, 43, 78, 0.9);
+               border-radius: 50%;
+               display: flex;
+               align-items: center;
+               justify-content: center;
+               cursor: pointer;
+               transition: all 0.3s ease;
+               z-index: 10;
+               border: 3px solid rgba(255, 255, 255, 0.8);
+               text-decoration: none;
+           }
+           
+           .play-button i {
+               font-size: 2rem;
+               color: white;
+               margin-left: 5px;
+           }
+           
+           .play-button:hover {
+               background: #1A2B4E;
+               transform: translate(-50%, -50%) scale(1.1);
+               box-shadow: 0 0 20px rgba(26, 43, 78, 0.3);
            }
        
        body {
@@ -407,7 +450,8 @@
         </div>
         <div class="blog-detail-right">
             <div class="blog-detail-video-wrapper">
-                <iframe class="blog-detail-video" src="https://www.youtube.com/embed/PHQogDYkQQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+                <img src="../images/procurement.avif" alt="Procurement Process Video" class="video-thumbnail">
+                <a class="play-button" href="https://youtu.be/PHQogDYkQQI" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
             </div>
             <div style="background: #fafbfc; border-radius: 20px; padding: 2rem 2.5rem; margin: 1.5rem 0; text-align: center; box-shadow: 0 2px 12px rgba(0,0,0,0.04);">
                 <div style="font-size: 2rem; color: #222; font-weight: bold; margin-bottom: 0.5rem;">&rdquo;</div>
