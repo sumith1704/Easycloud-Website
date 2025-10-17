@@ -2711,7 +2711,9 @@ body {
                         <span class="word">GROWTH</span>
                     </span>
                 </h1>
-                <p>Enterprise-grade technology solutions in the cloud, tailored to your unique needs, backed by years of successful implementation experience.</p>
+                <p>Empower your enterprise with cloud-based, AI-driven, and ERP-integrated solutions, tailored to your goals and built for long-term success.
+EasyCloud delivers scalable technology, seamless automation, and proven implementation expertise that drives real business progress.
+</p>
                 <a href="contact.php">
                 <button class="cta-button">Book A Demo</button>
                 </a>
@@ -2774,7 +2776,8 @@ body {
         <div class="domains-container">
             <div class="section-header">
                 <h2>Our Domains</h2>
-                <p>We offer easy domain registration to help you create a strong online presence and stand out.</p>
+                <p><strong>Powering Industries with Scalable Cloud and ERPNext Solutions</strong>
+ At EasyCloud, we deliver digital transformation across diverse industries through tailored ERPNext, AI, and cloud-based solutions. Our domain expertise helps businesses streamline operations, enhance decision-making, and achieve sustainable growth.</p>
             </div>
             <div class="domains-cards">
                 <a href="industrial-engineering.php">
@@ -2842,7 +2845,9 @@ body {
         <div class="analytics-container">
             <div class="section-header">
                 <h2>Analytics</h2>
-                <p>Simplify operations and improve customer experiences.</p>
+                <p><strong>Turn Data Into Decisions</strong>
+Enhance performance and customer satisfaction with data-driven insights. EasyCloud Analytics simplifies operations using tools like Power BI, Metabase, and Apache Superset; giving you clear, actionable intelligence for growth.
+</p>
             </div>
             <div class="analytics-cards">
                 <div class="analytics-card">
@@ -2851,7 +2856,7 @@ body {
                         <img src="images/powerbi.avif" alt="Power BI Dashboard">
                     </div>
                     <h3>Power BI</h3>
-                    <p>Turn data into insights with easy-to-use visualizations.</p>
+                    <p>Make smarter decisions with interactive dashboards and real-time reports. Power BI connects seamlessly to ERPNext, helping you visualize sales, production, and financial data for improved forecasting and performance tracking.Turn data into insights with easy-to-use visualizations.</p>
                     </a>
                 </div>
                 <div class="analytics-card">
@@ -2860,7 +2865,7 @@ body {
                         <img src="images/superset.avif" alt="Superset Dashboard">
                     </div>
                     <h3>Superset</h3>
-                    <p>Explore and visualize your data effortlessly.</p>
+                    <p>Experience fast, intuitive, and open-source analytics. Superset helps teams explore data through customizable dashboards, ensuring transparency, agility, and smarter insights across every business unit.</p>
                 </a>
                 </div>
                 <div class="analytics-card">
@@ -2869,7 +2874,7 @@ body {
                         <img src="images/metabase.avif" alt="Metabase Dashboard">
                     </div>
                     <h3>Metabase</h3>
-                    <p>Get answers from your data quickly and simply.</p>
+                    <p> Ask questions, get instant answers. Metabase simplifies business intelligence for everyone, enabling teams to query data, monitor metrics, and uncover insights without needing complex SQL or technical skills.</p>
                 </a>
                 </div>
             </div>
@@ -2884,7 +2889,8 @@ body {
         <div class="ai-container">
             <div class="section-header">
                 <h2>Artificial Intelligence</h2>
-                <p>Make industrial processes more efficient and effective.</p>
+                <p><strong>Smarter Automation. Stronger Outcomes.</strong>
+ Optimize industrial and business processes with AI-powered solutions designed for efficiency, precision, and scalability</p>
             </div>
             <div class="ai-content">
                 <div class="ai-features">
@@ -2895,7 +2901,7 @@ body {
                         <div class="feature-info">
                             <a href="process_automation.php" style="text-decoration:none;color:inherit;">
                                 <h3>Process Automation</h3>
-                                <p>Automate routine tasks and get more done.</p>
+                                <p>Streamline repetitive workflows and improve efficiency.</p>
                             </a>
                         </div>
                     </div>
@@ -2906,7 +2912,7 @@ body {
                         <div class="feature-info">
                             <a href="image_processing.php" style="text-decoration:none;color:inherit;">
                                 <h3>Image Processing</h3>
-                                <p>Improve and analyze images easily.</p>
+                                <p>Enhance image quality and extract valuable insights effortlessly.</p>
                             </a>
                         </div>
                     </div>
@@ -2917,7 +2923,7 @@ body {
                         <div class="feature-info">
                             <a href="rag.php" style="text-decoration:none;color:inherit;">
                                 <h3>RAG (Retrieval-Augmented Generation)</h3>
-                                <p>Get smarter answers by combining data retrieval and generation.</p>
+                                <p> Combine data retrieval and generative AI to deliver accurate, context-aware results.</p>
                             </a>
                         </div>
                     </div>
@@ -2937,7 +2943,8 @@ body {
         <div class="apps-container">
             <div class="section-header">
                 <h2>Apps</h2>
-                <p>Explore EasyCloud apps: streamline processes, boost productivity, and enhance user experiences.</p>
+                <p><strong>Transform Workflows with EasyCloud Apps</strong>
+Discover a suite of intelligent web and mobile applications built to simplify processes, increase productivity, and deliver intuitive user experiences.</p>
             </div>
             <div class="apps-content">
                 <div class="apps-features">
@@ -2949,7 +2956,7 @@ body {
                             <a href = "pos.php">
                             <h3>POS</h3>
                            
-                            <p>Revolutionize your sales operations with EasyCloud's POS system: a powerful, intuitive solution designed to streamline transactions, enhance customer interactions, and drive business growth.</p>
+                            <p>Transform your sales operations with an intuitive POS solution that streamlines billing, enhances customer interactions, and accelerates growth.</p>
                         </a>
                         </div>
                     </div>
@@ -2961,11 +2968,25 @@ body {
                             <a href = "mobile_app.php">
                             <h3>Mobile App</h3>
                         
-                            <p>Elevate your business with EasyCloud's Mobile App: a versatile, user-friendly solution that empowers on-the-go management, enhances customer engagement, and integrates seamlessly with your operations.</p>
+                            <p>Manage business operations on the go with a user-friendly mobile platform, enabling real-time access, customer engagement, and seamless integration with ERPNext.</p>
                             </a>
                         </div>
 
                     </div>
+                     <div class="app-feature">
+                        <div class="feature-icon">
+                <i class="fas fa-hospital-alt"></i>
+                        </div>
+                        <div class="feature-info">
+                            <a href = "mobile_app.php">
+                            <h3>HSE(Health, Safety, and Environment)</h3>
+                        
+                            <p>Ensure safety and compliance at every step. EasyCloud’s advanced, fully integrated HSE software is built for large-scale construction, infrastructure, and industrial projects.</p>
+                            </a>
+                        </div>
+
+                    </div>
+
                 </div>
                 <div class="apps-image">
                     <img src="images/app.avif" alt="EasyCloud Mobile App" class="app-image">
