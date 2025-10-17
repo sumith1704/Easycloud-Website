@@ -786,11 +786,13 @@ body {
 .feature-icon {
     width: 48px;
     height: 48px;
+    min-width: 48px;
     background: #f0f7ff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .feature-icon i {
@@ -931,13 +933,15 @@ body {
 }
 
 .app-feature .feature-icon {
-    width: 175px;
-    height: 50px;
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
     background: #f0f7ff;
     border-radius: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-shrink: 0;
 }
 
 .app-feature .feature-icon i {
