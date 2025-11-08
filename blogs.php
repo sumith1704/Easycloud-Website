@@ -327,7 +327,7 @@
         <a href="blogs/it_services_and_consult.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
 
             <!-- Blog Image -->
-            <img src="images/dashboard_logo.avif" alt="IT Services vs IT Consulting Blog"
+            <img src="images/Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
                 style="width: 100%; max-width: 500px; height: auto; aspect-ratio: 500/330; object-fit: cover; border-radius: 32px; flex-shrink: 0; display:block; margin:0 auto;">
 
             <!-- Blog Content -->
