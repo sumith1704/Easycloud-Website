@@ -324,7 +324,7 @@
     <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center; justify-content: center;">
 
         <!-- Blog Card -->
-        <a href="blogs/it_services_and_consult.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
+        <a href="blogs/it_services_vs_consult.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
 
             <!-- Blog Image -->
             <img src="images/Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
@@ -341,7 +341,7 @@
                 <p style="color: #555; font-size: 1.1rem; line-height:1.6; margin-bottom: 2rem;">
                    In today's technology-driven market, distinguishing between IT services and IT consulting is essential to unlocking your business's full potential. At Easycloudsoftware, we combine both elements to deliver tailored solutions that drive strategic growth.
                 </p>
-                <a href="blogs/it_services_and_consult.php" class="contact-btn" style="text-decoration: none;">Read More</a>
+                <a href="blogs/it_services_vs_consult.php" class="contact-btn" style="text-decoration: none;">Read More</a>
             </div>
         </a>
     </div>
@@ -733,14 +733,14 @@
             </a>
 
             <!-- Blog Card - IT Services vs Consulting -->
-            <a href="blogs/it_services_and_consult.php" style="text-decoration:none;color:inherit;display:block;">
+            <a href="blogs/it_services_vs_consult.php" style="text-decoration:none;color:inherit;display:block;">
                 <div
                     style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
-                    <button class="mobile-share-btn" onclick="openShareModal(event, 'IT Services vs. IT Consulting: Understanding the Difference', window.location.origin + '/blogs/it_services_and_consult.php')">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'IT Services vs. IT Consulting: Understanding the Difference', window.location.origin + '/blogs/it_services_vs_consult.php')">
                         <i class="fas fa-share-alt"></i>
                     </button>
-                    <img src="images\Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
-                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                    <img src="images/Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
+                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">IT Services vs. IT Consulting: Understanding the Difference</h3>
                     <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
                             class="far fa-calendar-alt"></i> November 8, 2025</div>

@@ -454,6 +454,7 @@
             <div class="blog-detail-date"><i class="far fa-calendar-alt"></i> Nov 8, 2025</div>
         </div>
         <div class="blog-detail-right">
+            <img src="../images/Frame 1410134946.png" alt="IT Services vs IT Consulting" class="blog-detail-image">
             <div class="blog-detail-content">
                 <p>In today's technology-driven market, distinguishing between IT services and IT consulting is essential to unlocking your business's full potential. At <strong>Easycloudsoftware</strong>, we combine both elements to deliver tailored solutions that not only support your operations but also drive strategic growth.</p>
 
