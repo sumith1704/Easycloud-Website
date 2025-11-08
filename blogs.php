@@ -740,7 +740,7 @@
                         <i class="fas fa-share-alt"></i>
                     </button>
                     <img src="images/Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
-                        style="width: 100%; height: 160px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                        style="width: 100%; height: 100%; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">IT Services vs. IT Consulting: Understanding the Difference</h3>
                     <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
                             class="far fa-calendar-alt"></i> November 8, 2025</div>
