@@ -479,9 +479,9 @@
             <div class="blog-share">
                 <span class="blog-share-label">Share:</span>
                 <a href="mailto:connect@easycloudsoftware.com" class="blog-share-icon"><i class="fas fa-envelope"></i></a>
-                <a href="https://www.youtube.com/@easycloud_info" class="blog-share-icon"><i class="fab fa-youtube"></i></a>
-                <a href="https://www.instagram.com/easycloud_info/" class="blog-share-icon"><i class="fab fa-instagram"></i></a>
-                <a href="https://www.linkedin.com/company/easycloudin/posts/?feedView=all" class="blog-share-icon"><i class="fab fa-linkedin-in"></i></a>
+                <a href="https://www.youtube.com/@easycloud_info" class="blog-share-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                <a href="https://www.instagram.com/easycloud_info/" class="blog-share-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.linkedin.com/company/easycloudin/posts/?feedView=all" class="blog-share-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
             </div>
         </div>
     </div>

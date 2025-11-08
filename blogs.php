@@ -786,12 +786,26 @@
             const encodedTitle = encodeURIComponent(title);
             const encodedUrl = encodeURIComponent(url);
             
-            // Update share links
-            document.getElementById('facebookShare').href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
-            document.getElementById('xShare').href = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
-            document.getElementById('linkedinShare').href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
-            document.getElementById('instagramShare').href = `https://www.instagram.com/`;
-            document.getElementById('whatsappShare').href = `https://api.whatsapp.com/send?text=${encodedTitle} ${encodedUrl}`;
+            // Update share links with target="_blank" to ensure new tab opening
+            const facebookShare = document.getElementById('facebookShare');
+            facebookShare.href = `https://www.facebook.com/sharer/sharer.php?u=${encodedUrl}`;
+            facebookShare.target = '_blank';
+            
+            const xShare = document.getElementById('xShare');
+            xShare.href = `https://twitter.com/intent/tweet?text=${encodedTitle}&url=${encodedUrl}`;
+            xShare.target = '_blank';
+            
+            const linkedinShare = document.getElementById('linkedinShare');
+            linkedinShare.href = `https://www.linkedin.com/sharing/share-offsite/?url=${encodedUrl}`;
+            linkedinShare.target = '_blank';
+            
+            const instagramShare = document.getElementById('instagramShare');
+            instagramShare.href = `https://www.instagram.com/`;
+            instagramShare.target = '_blank';
+            
+            const whatsappShare = document.getElementById('whatsappShare');
+            whatsappShare.href = `https://api.whatsapp.com/send?text=${encodedTitle} ${encodedUrl}`;
+            whatsappShare.target = '_blank';
             
             modal.style.display = 'flex';
         }

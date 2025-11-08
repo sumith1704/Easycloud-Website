@@ -277,10 +277,10 @@ footer {
              <div class="footer-logo-social">
                 <img src="../images/main_logo.svg" alt="EasyCloud Logo" class="footer-logo" width="80" height="80">
                 <div class="social-icons">
-                    <a href="https://x.com/Easycloud_info" class="social-icon"><i class="fab fa-twitter"></i></a>
-                    <a href="https://www.linkedin.com/company/easycloudin/posts/?feedView=all" class="social-icon"><i class="fab fa-linkedin-in"></i></a>
-                    <a href="https://www.youtube.com/@easycloud_info" class="social-icon"><i class="fab fa-youtube"></i></a>
-                    <a href="https://www.instagram.com/easycloud_info/" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="https://x.com/Easycloud_info" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/easycloudin/posts/?feedView=all" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@easycloud_info" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/easycloud_info/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
                 </div>
             </div>
            
