@@ -455,6 +455,71 @@
         </div>
     </section>
 
+    <!-- Relative Blogs Section -->
+    <section style="max-width: 1200px; margin: 3rem auto; padding: 2rem 1rem;">
+        <h2 style="text-align: center; color: #1a2b4e; margin-bottom: 0.5rem; font-family: 'Poppins', 'Segoe UI', Arial, sans-serif; font-weight: 800;">Relative Blogs</h2>
+        <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 2.5rem;">Explore our latest articles on livestock management and ERP solutions</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 2rem;">
+            <!-- Fish Feed Blog -->
+            <a href="blogs/fish_feed.php" style="text-decoration: none; color: inherit;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+                    <img src="images/fish_feed.avif" alt="Fish Feed Manufacturing" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px 12px 0 0;">
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: #1a2b4e; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">From Fish Feed Sales To Super Sales</h3>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Discover how ERP systems streamline fish feed production, quality control, and supply chain management.</p>
+                        <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Milking Blog -->
+            <a href="blogs/milking.php" style="text-decoration: none; color: inherit;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+                    <img src="images/milking.avif" alt="Dairy Milking Operations" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px 12px 0 0;">
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: #1a2b4e; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Milking Success</h3>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Learn how modern ERP solutions optimize milking operations, quality tracking, and dairy production efficiency.</p>
+                        <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Poultry Blog -->
+            <a href="blogs/poultry.php" style="text-decoration: none; color: inherit;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.08); overflow: hidden; transition: transform 0.3s, box-shadow 0.3s; height: 100%;">
+                    <img src="images/poultry.avif" alt="Poultry Farm Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px 12px 0 0;">
+                    <div style="padding: 1.5rem;">
+                        <h3 style="color: #1a2b4e; font-size: 1.2rem; margin-bottom: 0.75rem; font-weight: 700;">Transforming Poultry Invoicing</h3>
+                        <p style="color: #666; font-size: 0.95rem; line-height: 1.6; margin-bottom: 1rem;">Explore comprehensive ERP solutions for poultry farming, from flock management to feed optimization.</p>
+                        <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                    </div>
+                </div>
+            </a>
+        </div>
+
+        <div style="text-align: center; margin-top: 2.5rem;">
+            <a href="blogs.php" style="display: inline-block; background: linear-gradient(90deg, #5a6473 0%, #23272f 100%); color: #fff; padding: 0.9rem 2rem; border-radius: 8px; text-decoration: none; font-weight: 600; transition: transform 0.2s, box-shadow 0.2s; box-shadow: 0 4px 12px rgba(0,0,0,0.1);">
+                View All Blogs
+            </a>
+        </div>
+
+        <style>
+            @media (max-width: 768px) {
+                div[style*="grid-template-columns: repeat(3, 1fr)"] {
+                    grid-template-columns: 1fr !important;
+                }
+            }
+            a[href*="blogs/"] > div {
+                transition: transform 0.3s, box-shadow 0.3s;
+            }
+            a[href*="blogs/"]:hover > div {
+                transform: translateY(-5px);
+                box-shadow: 0 8px 24px rgba(0,0,0,0.12) !important;
+            }
+        </style>
+    </section>
+
     <!-- CEO Quote Section -->
     <section class="ceo-quote-section">
         <div class="ceo-quote-container">

@@ -383,6 +383,91 @@
         </div>
     </section>
 
+    <!-- Related Blogs Section -->
+    <section style="max-width: 1200px; margin: 3rem auto; padding: 2rem 1rem;">
+        <h2 style="text-align: center; color: #1a2b4e; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Relative Blogs</h2>
+        <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">Explore our latest articles on industrial engineering and ERP solutions</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 2rem;">
+            
+            <!-- Blog Card 1: BOM -->
+            <a href="blogs/bom.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/Blog Aug-08-25 (2) (1).jpg" alt="Bill of Materials" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Is Your BOM Ticking...?</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Automate BOM management, inventory control, and production accuracy with EasyCloud ERP.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 2: Rise of AI Agents -->
+            <a href="blogs/rise_of_ai_agents.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/ai_blog.avif" alt="AI Agents in ERP" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">The Rise of AI Agents: Revolutionizing Manufacturing with ERP and Cloud Solutions</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Explore how AI agents are revolutionizing ERP and leading the shift toward autonomous, intelligent systems.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 3: MRP -->
+            <a href="blogs/mrp.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images\WhatsApp Image 2025-07-07 at 3.46.03 PM.jpeg" alt="Material Resource Planning" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Boosting Efficiency with Material Resource Planning (MRP)</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Bring automation to MRP with precise inventory, demand, and production planning tools.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 4: Warehouse -->
+            <a href="blogs/warehouse.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images\inventory.avif" alt="Warehouse Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Optimize Your Warehouse And Inventory Management With EasyCloud</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Gain real-time visibility into inventory, stock movement, and warehousing operations.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 5: Procurement -->
+            <a href="blogs/procurement.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/procurement.avif" alt="Procurement Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Streamline Your Procurement Process With EasyCloud</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Automate procurement cycles, vendor management, and purchase orders seamlessly.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="/blogs.php" style="text-decoration: none;">
+                <button style="background: linear-gradient(90deg, #5a6473 0%, #23272f 100%); color: #fff; font-weight: 700; border: none; border-radius: 8px; padding: 1rem 2.5rem; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s, box-shadow 0.3s;">
+                    <i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>View All Blogs
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <style>
+        /* Blog card hover effects */
+        section a > div {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section a > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        }
+        /* CTA button hover */
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;
+        }
+    </style>
+
     <!-- CEO Quote Section -->
     <section class="ceo-quote-section">
         <div class="ceo-quote-container">

@@ -449,6 +449,107 @@
         </div>
     </section>
 
+    <!-- Relative Blogs Section -->
+    <section style="max-width: 1200px; margin: 3rem auto; padding: 2rem 1rem;">
+        <h2 style="text-align: center; color: #1a2b4e; font-size: 2.5rem; font-weight: 700; margin-bottom: 1rem;">Relative Blogs</h2>
+        <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">Explore our latest articles on construction and project management</p>
+        
+        <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem;">
+            
+            <!-- Blog Card 1: Construction -->
+            <a href="blogs/construction.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/construction_blog.avif" alt="Construction ERP" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">EasyCloud revolutionizing Construction projects</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Streamline construction projects with integrated ERP solutions for planning, tracking, and execution.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 2: Critical Chain -->
+            <a href="blogs/critical_chan.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/critical.avif" alt="Critical Chain Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Critical Chain Project Management</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Master critical chain methodology to optimize project timelines and resource allocation.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 3: MRP -->
+            <a href="blogs/mrp.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images\WhatsApp Image 2025-07-07 at 3.46.03 PM.jpeg" alt="Material Requirements Planning" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Boosting Efficiency with Material Resource Planning (MRP)</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Optimize material planning and inventory control for construction projects with MRP systems.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 4: Procurement -->
+            <a href="blogs/procurement.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/procurement.avif" alt="Procurement Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Streamline Your Procurement Process With EasyCloud</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Streamline procurement processes and vendor management for construction materials and services.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 5: Labour Teams -->
+            <a href="blogs/labour_teams.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/labour_teams.avif" alt="Labour Team Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Track. Verify. Pay. EasyCloud for Labour Team</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Manage construction workforce efficiently with labour tracking and team coordination tools.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+            <!-- Blog Card 6: HR Management -->
+            <a href="blogs/hr_management.php" style="text-decoration:none;color:inherit;display:block;">
+                <div style="background: #fff; border-radius: 18px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; height: 100%; transition: transform 0.3s, box-shadow 0.3s;">
+                    <img src="images/hr_management.avif" alt="HR Management" style="width: 100%; height: 180px; object-fit: cover; border-radius: 12px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.2rem; font-weight: 700; margin-bottom: 0.5rem;">Enhance Your HR Management With EasyCloud</h3>
+                    <p style="color: #666; font-size: 0.95rem; margin-bottom: 1rem; flex-grow: 1;">Streamline employee management, payroll, and workforce planning with integrated HR solutions.</p>
+                    <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                </div>
+            </a>
+
+        </div>
+
+        <!-- CTA Button -->
+        <div style="text-align: center; margin-top: 3rem;">
+            <a href="/blogs.php" style="text-decoration: none;">
+                <button style="background: linear-gradient(90deg, #5a6473 0%, #23272f 100%); color: #fff; font-weight: 700; border: none; border-radius: 8px; padding: 1rem 2.5rem; font-size: 1.1rem; cursor: pointer; box-shadow: 0 4px 15px rgba(0,0,0,0.2); transition: transform 0.3s, box-shadow 0.3s;">
+                    <i class="fas fa-book-open" style="margin-right: 0.5rem;"></i>View All Blogs
+                </button>
+            </a>
+        </div>
+    </section>
+
+    <style>
+        /* Blog card hover effects */
+        section a > div {
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        section a > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(0,0,0,0.15) !important;
+        }
+        /* CTA button hover */
+        button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 6px 20px rgba(0,0,0,0.3) !important;
+        }
+        /* Responsive grid for mobile */
+        @media (max-width: 768px) {
+            section > div > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+    </style>
+
     <!-- CEO Quote Section -->
     <section class="ceo-quote-section">
         <div class="ceo-quote-container">

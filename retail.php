@@ -464,6 +464,191 @@
         </div>
     </section>
 
+    <!-- Relative Blogs Section -->
+    <section style="padding: 4rem 2rem; background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);">
+        <div style="max-width: 1200px; margin: 0 auto;">
+            <h2 style="text-align: center; font-size: 2.5rem; margin-bottom: 1rem; color: #1a2b4e; font-weight: 800;">Relative Blogs</h2>
+            <p style="text-align: center; color: #666; font-size: 1.1rem; margin-bottom: 3rem;">Explore our latest articles on retail and ERP solutions</p>
+            
+            <div style="display: grid; grid-template-columns: repeat(3, 1fr); gap: 2rem; margin-bottom: 3rem;">
+                <!-- Blog Card 1: Fish Feed -->
+                <a href="blogs/fish_feed.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/fish_feed.avif" alt="Fish Feed Manufacturing" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">From Fish Feed Sales To Super Sales</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Streamline fish feed production with specialized ERP solutions for aquaculture manufacturing.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 2: MRP -->
+                <a href="blogs/mrp.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images\WhatsApp Image 2025-07-07 at 3.46.03 PM.jpeg" alt="Material Requirements Planning" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Boosting Efficiency with Material Resource Planning (MRP)</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Optimize production planning and inventory management with MRP systems.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 3: Warehouse -->
+                <a href="blogs/warehouse.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images\inventory.avif" alt="Warehouse Management" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Optimize Your Warehouse And Inventory Management With EasyCloud</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Transform warehouse operations with modern inventory and logistics management.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 4: Procurement -->
+                <a href="blogs/procurement.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/procurement.avif" alt="Procurement Process" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Streamline Your Procurement Process With EasyCloud</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Enhance supplier relationships and optimize procurement processes with digital solutions.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 5: Order to Cash -->
+                <a href="blogs/order-to-cash.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/images_order.avif" alt="Order to Cash" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Optimize Your Order-To-Cash Process With EasyCloud</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Streamline your revenue cycle from order placement to payment collection.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 6: Sweet Shop -->
+                <a href="blogs/sweet_shop.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="/images/Group 1000007989-min (1).png" alt="Sweet Shop ERP" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Automating Every Bite: Swiggy, Zomato & Smart Supply Chains</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Specialized ERP solutions for sweet shops and confectionery businesses.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 7: Chaos -->
+                <a href="blogs/chaos.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/choas.avif" alt="Managing Business Chaos" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">No More Prescription For Chaos</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Transform operational chaos into streamlined efficiency with the right ERP strategy.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 8: Milking -->
+                <a href="blogs/milking.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/milking.avif" alt="Milking Operations" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Milking Success</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Optimize dairy farming with automated milking systems and tracking solutions.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 9: Poultry -->
+                <a href="blogs/poultry.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/poultry.avif" alt="Poultry Management" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Transforming Poultry Invoicing</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Comprehensive ERP solutions for poultry farming and production management.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 10: Capture with AI -->
+                <a href="blogs/capture_with_ai.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/ai_blog.avif" alt="Capture with AI" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">From LED Screens To ERP: Revolutionizing Data Capture With AI</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Leverage artificial intelligence to automate data capture and streamline operations.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 11: Supply Chain and Logistics -->
+                <a href="blogs/chain_and_logistics.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/logistics.avif" alt="Supply Chain and Logistics" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Transforming Supply Chain And Logistics With EasyCloud</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Optimize your supply chain and logistics with integrated management solutions.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 12: EasyCloud CRM -->
+                <a href="blogs/easycloud_crm.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/easycloud_crm.avif" alt="EasyCloud CRM" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Transform Your Business With EasyCloud CRM</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Transform customer relationships with our comprehensive CRM solution.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+
+                <!-- Blog Card 13: After Sales Service -->
+                <a href="blogs/after_sales_service.php" style="text-decoration: none;">
+                    <div style="background: white; border-radius: 12px; overflow: hidden; box-shadow: 0 4px 6px rgba(0,0,0,0.1); transition: transform 0.3s, box-shadow 0.3s; height: 100%; display: flex; flex-direction: column;">
+                        <img src="images/sales_service.avif" alt="After Sales Service" style="width: 100%; height: 200px; object-fit: cover;">
+                        <div style="padding: 1.5rem; flex-grow: 1; display: flex; flex-direction: column;">
+                            <h3 style="color: #1a2b4e; margin-bottom: 0.75rem; font-size: 1.25rem; font-weight: 700;">Elevate Your After Sales Service With EasyCloud</h3>
+                            <p style="color: #666; line-height: 1.6; margin-bottom: 1rem; flex-grow: 1;">Enhance customer satisfaction with efficient after-sales service management.</p>
+                            <span style="color: #5a6473; font-weight: 600;">Read More →</span>
+                        </div>
+                    </div>
+                </a>
+            </div>
+
+            <div style="text-align: center;">
+                <a href="blogs.php" style="display: inline-block; background: linear-gradient(90deg, #5a6473 0%, #23272f 100%); color: white; padding: 1rem 2.5rem; border-radius: 8px; text-decoration: none; font-weight: 600; font-size: 1.1rem; transition: transform 0.3s, box-shadow 0.3s;">
+                    View All Blogs →
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <style>
+        @media (max-width: 768px) {
+            section[style*="grid-template-columns: repeat(3, 1fr)"] > div > div {
+                grid-template-columns: 1fr !important;
+            }
+        }
+        
+        a[href^="blogs/"] > div:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 16px rgba(0,0,0,0.15) !important;
+        }
+    </style>
+
     <!-- CEO Quote Section -->
     <section class="ceo-quote-section">
         <div class="ceo-quote-container">
@@ -527,7 +712,7 @@
 
     <section class="experience-section">
         <div class="experience-container">
-             <h2 style="color: #ffffff;">Experience EasyCloud Today<
+            <h2 style="color: #ffffff;">Experience EasyCloud Today</h2>
             <p>Got questions? Let's get you moving.</p>
             <a href="contact.php" class="experience-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
         </div>
