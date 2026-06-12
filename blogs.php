@@ -311,6 +311,13 @@
         }
         
         </style>
+
+    <script>
+        function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+        o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+        o.onload=function(){window.trackingFunctions.onLoad({appId:"69ec8a74b4f84c001558cbf2"})},
+        document.head.appendChild(o)}initApollo();
+    </script>
 </head>
 
 <body>
@@ -323,25 +330,25 @@
     <section style="max-width: 1200px; margin: 0 auto; padding-top: 1rem; padding-bottom: 6rem;">
     <div style="display: flex; flex-wrap: wrap; gap: 2.5rem; align-items: center; justify-content: center;">
 
-        <!-- Blog Card -->
-        <a href="blogs/it_services_vs_consult.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
+        <!-- Featured Blog Card - Fixed Asset Register -->
+        <a href="blogs/fixed_asset_register.php" style="text-decoration:none; color:inherit; display:block; max-width:1000px; text-align:center;">
 
             <!-- Blog Image -->
-            <img src="images/Frame 1410134946.png" alt="IT Services vs IT Consulting Blog"
+            <img src="images/Thumbnail 2.png" alt="Fixed Asset Register: Ultimate Guide for Schools & Colleges 2026"
                 style="width: 100%; max-width: 500px; height: auto; aspect-ratio: 500/330; object-fit: cover; border-radius: 32px; flex-shrink: 0; display:block; margin:0 auto;">
 
             <!-- Blog Content -->
             <div style="flex: 1 1 400px; min-width: 280px; max-width: 500px; margin-top:1.5rem; text-align:center; margin-left:auto; margin-right:auto;">
                 <h2 style="color: #1a2b4e; font-size: 2.3rem; font-weight: 800; margin-bottom: 1rem; line-height:1.2;">
-                    IT Services vs. IT Consulting: Understanding the Difference
+                    Fixed Asset Register: The Ultimate Guide to Asset Tracking for Schools &amp; Colleges in 2026 with EasyCloud
                 </h2>
                 <div style="color: #888; font-size: 1rem; margin-bottom: 1rem;">
-                    <i class="far fa-calendar-alt"></i> November 8, 2025
+                    <i class="far fa-calendar-alt"></i> March 14, 2026
                 </div>
                 <p style="color: #555; font-size: 1.1rem; line-height:1.6; margin-bottom: 2rem;">
-                   In today's technology-driven market, distinguishing between IT services and IT consulting is essential to unlocking your business's full potential. At Easycloudsoftware, we combine both elements to deliver tailored solutions that drive strategic growth.
+                    Managing assets across a large educational campus is never simple. With EasyCloud's Fixed Asset Register, track equipment, automate preventive maintenance, and simplify audits—saving time and operational costs for schools and colleges.
                 </p>
-                <a href="blogs/it_services_vs_consult.php" class="contact-btn" style="text-decoration: none;">Read More</a>
+                <a href="blogs/fixed_asset_register.php" class="contact-btn" style="text-decoration: none;">Read More</a>
             </div>
         </a>
     </div>
@@ -744,6 +751,52 @@
                     <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">IT Services vs. IT Consulting: Understanding the Difference</h3>
                     <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
                             class="far fa-calendar-alt"></i> November 8, 2025</div>
+                </div>
+            </a>
+
+            <!-- Blog Card - Gate Exit (NEW) -->
+            <a href="blogs/gate_exit.php" style="text-decoration:none;color:inherit;display:block;">
+                <div
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'EasyCloud Gate Exit: Bringing Control and Visibility to Your Factory Dispatch', window.location.origin + '/blogs/gate_exit.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <img src="images/Gate Exit Blog Thumbnail.png" alt="Gate Exit Control Blog"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">EasyCloud Gate Exit: Bringing Control and Visibility to Your Factory Dispatch</h3>
+                        <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">     </h3>
+                        <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">     </h3>
+                    <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
+                            class="far fa-calendar-alt"></i> December 29, 2025</div>
+                </div>
+            </a>
+            <!-- Blog Card - Visitor Management (NEW) -->
+            <a href="blogs/visitor_management.php" style="text-decoration:none;color:inherit;display:block;">
+                <div
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Streamline Your Factory Security with EasyCloud Visitor Management', window.location.origin + '/blogs/visitor_management.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <img src="images/Streamline Your Factory Security Thumbnail.png" alt="EasyCloud Visitor Management Blog"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Streamline Your Factory Security with EasyCloud Visitor Management</h3>
+                    <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
+                            class="far fa-calendar-alt"></i> February 9, 2026</div>
+                </div>
+            </a>
+
+            <!-- Blog Card - Fixed Asset Register -->
+            <a href="blogs/fixed_asset_register.php" style="text-decoration:none;color:inherit;display:block;">
+                <div
+                    style="background: #fff; border-radius: 28px; box-shadow: 0 2px 16px rgba(0,0,0,0.07); padding: 1.5rem; display: flex; flex-direction: column; align-items: flex-start; position: relative;">
+                    <button class="mobile-share-btn" onclick="openShareModal(event, 'Fixed Asset Register: The Ultimate Guide to Asset Tracking for Schools & Colleges in 2026 with EasyCloud', window.location.origin + '/blogs/fixed_asset_register.php')">
+                        <i class="fas fa-share-alt"></i>
+                    </button>
+                    <img src="images/Thumbnail 2.png" alt="Fixed Asset Register for Schools and Colleges Blog"
+                        style="width: 100%; height: 200px; object-fit: cover; border-radius: 18px; margin-bottom: 1rem;">
+                    <h3 style="color: #1a2b4e; font-size: 1.18rem; font-weight: 700; margin-bottom: 0.5rem;">Fixed Asset Register: The Ultimate Guide to Asset Tracking for Schools &amp; Colleges in 2026 with EasyCloud</h3>
+                    <div style="color: #888; font-size: 0.95rem; margin-bottom: 0.7rem;"><i
+                            class="far fa-calendar-alt"></i> March 14, 2026</div>
                 </div>
             </a>
         </div>

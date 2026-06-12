@@ -69,23 +69,56 @@
     
     width: 90% !important; /* not full-width to show rounded edges */
     z-index: 9999 !important;
-    padding: 0.3rem 0.6rem !important;
+    padding: 1rem 0.75rem !important;
     border: 1px solid rgba(255, 255, 255, 0.2) !important; /* glass border */
 }
 
 /* Adjust body padding since navbar is no longer 100% */
 body {
-    padding-top: 120px !important;
+    padding-top: 145px !important;
 }
+
+        /* Use full bar width + equal side padding (fixes lopsided gap by Contact) */
+        .easycloud-navbar > .container {
+            max-width: 100% !important;
+            padding-left: 1rem !important;
+            padding-right: 1rem !important;
+        }
+
+        .easycloud-navbar .navbar-brand {
+            display: flex !important;
+            align-items: center !important;
+            margin-right: 0.75rem !important;
+            padding-top: 0 !important;
+            padding-bottom: 0 !important;
+        }
+
+        .easycloud-navbar .navbar-brand img {
+            width: auto !important;
+            height: 54px !important;
+            object-fit: contain !important;
+        }
 
         /* Navigation links */
         .easycloud-navbar .navbar-nav .nav-link {
             color: var(--text-color) !important;
             font-weight: 600 !important;
-            font-size: 1.1rem !important;
-            padding: 0.6rem 1.2rem !important;
+            font-size: 1.05rem !important;
+            padding: 0.65rem 0.65rem !important;
             border-radius: 8px !important;
             transition: var(--transition) !important;
+            display: inline-flex !important;
+            align-items: center !important;
+            line-height: 1.2 !important;
+        }
+
+        @media (min-width: 992px) {
+            .easycloud-navbar .navbar-nav {
+                gap: 0.15rem !important;
+            }
+            .easycloud-navbar .navbar-nav .nav-link {
+                white-space: nowrap !important;
+            }
         }
 
         .easycloud-navbar .navbar-nav .nav-link:hover {
@@ -100,7 +133,7 @@ body {
             font-weight: 700 !important;
             border: none !important;
             border-radius: 8px !important;
-            padding: 0.6rem 1.5rem !important;
+            padding: 0.5rem 1.25rem !important;
             font-size: 1rem !important;
             cursor: pointer;
             box-shadow: 0 2px 8px rgba(0,0,0,0.1);
@@ -109,6 +142,13 @@ body {
             display: inline-flex;
             align-items: center;
             gap: 0.5rem;
+            line-height: 1.2 !important;
+        }
+
+        @media (min-width: 992px) {
+            .easycloud-navbar .contact-btn {
+                white-space: nowrap !important;
+            }
         }
 
         .easycloud-navbar .contact-btn:hover {
@@ -213,11 +253,14 @@ body {
         /* Mobile optimizations */
         @media (max-width: 991.98px) {
             body {
-                padding-top: 70px !important;
+                padding-top: 88px !important;
             }
             
             .easycloud-navbar {
-                padding: 0.5rem 0 !important;
+                padding: 0.75rem 0 !important;
+            }
+            .easycloud-navbar .navbar-nav .nav-link {
+                white-space: normal !important;
             }
             .navbar-brand img {
                 width: 60px !important;
@@ -256,6 +299,7 @@ body {
                 width: 100% !important;
                 justify-content: center !important;
                 margin-top: 1rem !important;
+                white-space: normal !important;
             }
         }
 
@@ -275,14 +319,22 @@ body {
             box-shadow: none !important;
         }
     </style>
+
+    <script>
+      function initApollo(){var n=Math.random().toString(36).substring(7),o=document.createElement("script");
+      o.src="https://assets.apollo.io/micro/website-tracker/tracker.iife.js?nocache="+n,o.async=!0,o.defer=!0,
+      o.onload=function(){window.trackingFunctions.onLoad({appId:"69ec8a74b4f84c001558cbf2"})},
+      document.head.appendChild(o)}initApollo();
+    </script>
+    
 </head>
 <body>
     <!-- Bootstrap Navigation -->
-    <nav class="navbar navbar-expand-lg easycloud-navbar">
+    <nav class="navbar navbar-expand-lg easycloud-navbar align-items-center">
         <div class="container">
             <!-- Logo -->
             <a class="navbar-brand" href="/index.php" aria-label="EasyCloud Home">
-                <img src="/images/main_logo.svg" alt="EasyCloud Logo" width="150" height="80" />
+                <img src="/images/main_logo.svg" alt="EasyCloud Logo" width="150" height="54" />
             </a>
 
             <!-- Mobile toggle button -->
@@ -291,8 +343,8 @@ body {
             </button>
 
             <!-- Navigation items -->
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav mx-auto">
+            <div class="collapse navbar-collapse align-items-lg-center" id="navbarNav">
+                <ul class="navbar-nav mx-auto align-items-lg-center">
                     <!-- Home Icon -->
                     <li class="nav-item">
                         <a class="nav-link" href="/index.php" aria-label="Home">
@@ -463,16 +515,19 @@ body {
                             </a></li>
                         </ul>
                     </li>
+                    <li class="nav-item"><a class="nav-link" href="/firewall.php">Firewall</a></li>
 
                     <!-- Regular Nav Items -->
                     <li class="nav-item"><a class="nav-link" href="/blogs.php">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="/our_process.php">Our Processes</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.php">About Us</a></li>
+                    
+
                 </ul>
 
                 <!-- Contact Button -->
-                <div class="d-flex">
-                    <a href="/contact.php">
+                <div class="d-flex align-items-center">
+                    <a href="/contact.php" class="d-inline-flex align-items-center text-decoration-none">
                         <button class="contact-btn">
                             <i class="fas fa-envelope me-2"></i>Contact Us
                         </button>
