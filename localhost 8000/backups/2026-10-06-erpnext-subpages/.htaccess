@@ -1,0 +1,24 @@
+RewriteEngine On
+
+# Clean URL for the Microsoft Dynamics 365 Business Central page
+RewriteRule ^microsoft-dynamics-365-business-central/?$ microsoft-dynamics-365-business-central.php [L]
+
+# Clean URLs for the Business Central sub-pages
+RewriteRule ^business-central/manufacturing/case-studies/?$ business-central-manufacturing-case-studies.php [L]
+RewriteRule ^business-central/manufacturing/?$ business-central-manufacturing.php [L]
+RewriteRule ^business-central/quickbooks-migration/?$ business-central-quickbooks-migration.php [L]
+RewriteRule ^business-central/legacy-erp-migration/?$ business-central-legacy-erp-migration.php [L]
+
+# Clean URL for the ERPNext page
+RewriteRule ^erpnext/?$ erpnext.php [L]
+
+# Clean URLs for the nav pages added 2026-10-03
+RewriteRule ^distribution/?$ distribution.php [L]
+RewriteRule ^business-applications/?$ business-applications.php [L]
+RewriteRule ^analytics-bi/?$ analytics-bi.php [L]
+RewriteRule ^dealer-customer-portals/?$ dealer-customer-portals.php [L]
+RewriteRule ^integrations/?$ integrations.php [L]
+RewriteRule ^case-studies/?$ case-studies.php [L]
+RewriteRule ^careers/?$ careers.php [L]
+RewriteRule ^erp-consulting/?$ erp-consulting.php [L]
+RewriteRule ^business-central-vs-erpnext/?$ business-central-vs-erpnext.php [L]
