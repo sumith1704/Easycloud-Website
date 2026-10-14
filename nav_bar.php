@@ -7,14 +7,14 @@
       // Initialize dataLayer for consent mode
       window.dataLayer = window.dataLayer || [];
       function gtag(){dataLayer.push(arguments);}
-      
+
       // Set default consent to denied (GDPR compliant)
       gtag('consent', 'default', {
         'analytics_storage': 'denied',
         'ad_storage': 'denied',
         'wait_for_update': 500
       });
-      
+
       // Initialize Google Analytics (will respect consent)
       gtag('js', new Date());
       gtag('config', 'G-5NW9HQ2H0F', {
@@ -24,16 +24,16 @@
     </script>
     <!-- Load gtag.js script -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-5NW9HQ2H0F"></script>
-    
+
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>EasyCloud - Bootstrap Navigation</title>
-    
+
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" rel="stylesheet">
-    
+
     <style>
         /* ========================================
            SIMPLE WORKING NAVBAR CSS
@@ -61,12 +61,12 @@
     -webkit-backdrop-filter: blur(12px) !important;
     border-radius: 20px !important; /* curved edges */
     box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important; /* soft shadow */
-    
+
     position: fixed !important;
     top: 15px !important; /* small gap from top */
     left: 50% !important;
     transform: translateX(-50%) !important;
-    
+
     width: 90% !important; /* not full-width to show rounded edges */
     z-index: 9999 !important;
     padding: 1rem 0.75rem !important;
@@ -170,9 +170,14 @@ body {
 
         /* Specific dropdown widths */
         .easycloud-navbar .domains-dropdown { min-width: 650px; }
+        .easycloud-navbar .erp-dropdown { min-width: 480px; }
         .easycloud-navbar .analytics-dropdown { min-width: 420px; }
         .easycloud-navbar .ai-dropdown { min-width: 520px; }
         .easycloud-navbar .apps-dropdown { min-width: 480px; }
+        .easycloud-navbar .industries-dropdown { min-width: 340px; }
+        .easycloud-navbar .digital-dropdown { min-width: 380px; }
+        .easycloud-navbar .work-dropdown { min-width: 380px; }
+        .easycloud-navbar .about-dropdown { min-width: 280px; }
 
         /* Grid layout for domains */
         .easycloud-navbar .domains-grid {
@@ -202,6 +207,126 @@ body {
             text-decoration: none !important;
             color: #333 !important;
             border-color: #e9ecef !important;
+        }
+
+        /* Manufacturing group: sub-items listed under the Manufacturing domain */
+        .easycloud-navbar .domain-subitems {
+            list-style: none;
+            margin: 0.25rem 0 0 0;
+            padding: 0 0 0 3.5rem;
+        }
+
+        .easycloud-navbar .domain-subitems a {
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+            padding: 0.35rem 0.5rem;
+            border-radius: 6px;
+            font-size: 0.85rem;
+            font-weight: 600;
+            color: #2c3e50;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .easycloud-navbar .domain-subitems a i {
+            color: #2196f3;
+            font-size: 0.75rem;
+        }
+
+        .easycloud-navbar .domain-subitems a:hover {
+            background-color: #f8f9fa;
+            color: var(--hover-color);
+        }
+
+        /* ERP Solutions dropdown layout (NAV 2026-10-12): heading, parent items with chevron, lighter indented sub-items, bold standalone links */
+        .easycloud-navbar .erp-menu,
+        .easycloud-navbar .erp-menu ul {
+            list-style: none;
+        }
+
+        .easycloud-navbar .erp-menu .erp-menu-heading {
+            display: flex;
+            align-items: center;
+            gap: 0.6rem;
+            padding: 0 0.5rem 0.6rem;
+            font-size: 1rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .easycloud-navbar .erp-menu .erp-menu-heading i {
+            color: #6c757d;
+            font-size: 0.9rem;
+        }
+
+        .easycloud-navbar .erp-menu .erp-parent,
+        .easycloud-navbar .erp-menu .erp-children a,
+        .easycloud-navbar .erp-menu .erp-standalone {
+            display: flex;
+            align-items: center;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: var(--transition);
+        }
+
+        .easycloud-navbar .erp-menu .erp-parent {
+            gap: 0.6rem;
+            padding: 0.45rem 0.5rem 0.45rem 0.75rem;
+            font-size: 0.95rem;
+            font-weight: 500;
+            color: #2c3e50;
+        }
+
+        .easycloud-navbar .erp-menu .erp-parent i {
+            color: #2c3e50;
+            font-size: 0.8rem;
+            width: 0.8rem;
+            text-align: center;
+            transition: var(--transition);
+        }
+
+        .easycloud-navbar .erp-menu .erp-children {
+            margin: 0 0 0.35rem 0;
+            padding: 0 0 0 2.15rem;
+        }
+
+        .easycloud-navbar .erp-menu .erp-children a {
+            padding: 0.25rem 0.5rem;
+            font-size: 0.875rem;
+            font-weight: 400;
+            color: #6c757d;
+        }
+
+        .easycloud-navbar .erp-menu .erp-standalone {
+            padding: 0.45rem 0.5rem;
+            font-size: 0.95rem;
+            font-weight: 600;
+            color: #2c3e50;
+        }
+
+        .easycloud-navbar .erp-menu .erp-parent:hover,
+        .easycloud-navbar .erp-menu .erp-children a:hover,
+        .easycloud-navbar .erp-menu .erp-standalone:hover {
+            background-color: #f8f9fa;
+            color: var(--hover-color);
+            text-decoration: none;
+        }
+
+        .easycloud-navbar .erp-menu .erp-parent:hover i {
+            color: #2196f3;
+            transform: translateX(2px);
+        }
+
+        /* Keyboard focus for the ERP Solutions and Domains menus (2026-10-01 audit) */
+        .easycloud-navbar .nav-item.dropdown:has(> .erp-dropdown) > .nav-link:focus-visible,
+        .easycloud-navbar .nav-item.dropdown:has(> .domains-dropdown) > .nav-link:focus-visible,
+        .easycloud-navbar .erp-dropdown a:focus-visible,
+        .easycloud-navbar .domains-dropdown .domain-subitems a:focus-visible,
+        .easycloud-navbar .domains-dropdown .domains-grid > li:first-child > .dropdown-item-custom:focus-visible {
+            outline: 2px solid #1a2b4e !important;
+            outline-offset: 2px;
+            box-shadow: none !important;
         }
 
         /* Icons */
@@ -255,7 +380,7 @@ body {
             body {
                 padding-top: 88px !important;
             }
-            
+
             .easycloud-navbar {
                 padding: 0.75rem 0 !important;
             }
@@ -266,35 +391,39 @@ body {
                 width: 60px !important;
                 height: auto !important;
             }
-            
+
             .easycloud-navbar .domains-grid {
                 grid-template-columns: 1fr !important;
                 gap: 0.5rem !important;
             }
-            
+
             .easycloud-navbar .dropdown-menu {
                 min-width: auto !important;
                 width: 100% !important;
                 margin: 0.5rem 0 !important;
                 padding: 1rem !important;
             }
-            
+
             .easycloud-navbar .item-icon {
                 font-size: 1.5rem !important;
                 min-width: 35px !important;
                 width: 35px !important;
             }
-            
+
             .easycloud-navbar .analytics-icon {
                 width: 35px !important;
                 height: 35px !important;
                 font-size: 0.85rem !important;
             }
-            
+
             .easycloud-navbar .item-info p {
                 display: none !important;
             }
-            
+
+            .easycloud-navbar .domain-subitems {
+                padding-left: 3rem;
+            }
+
             .easycloud-navbar .contact-btn {
                 width: 100% !important;
                 justify-content: center !important;
@@ -326,7 +455,7 @@ body {
       o.onload=function(){window.trackingFunctions.onLoad({appId:"69ec8a74b4f84c001558cbf2"})},
       document.head.appendChild(o)}initApollo();
     </script>
-    
+
 </head>
 <body>
     <!-- Bootstrap Navigation -->
@@ -351,7 +480,218 @@ body {
                             <i class="fas fa-home"></i>
                         </a>
                     </li>
-                    
+
+                    <!-- ERP Solutions Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            ERP Solutions
+                        </a>
+                        <?php if (false): /* NAV 2026-10-12: previous ERP Solutions dropdown layout hidden (replaced by the layout below) */ ?>
+                        <ul class="dropdown-menu erp-dropdown">
+                            <li><a href="/microsoft-dynamics-365-business-central" class="dropdown-item-custom">
+                                <i class="fab fa-microsoft item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Microsoft Dynamics 365 Business Central</h6>
+                                    <?php /* NAV 2026-10-03: description hidden <p>Cloud ERP powered by Microsoft</p> */ ?>
+                                </div>
+                            </a>
+                            <ul class="domain-subitems">
+                                <li><a href="/business-central/manufacturing"><i class="fas fa-angle-right" aria-hidden="true"></i>Manufacturing</a></li>
+                                <li><a href="/business-central/quickbooks-migration"><i class="fas fa-angle-right" aria-hidden="true"></i>QuickBooks Migration</a></li>
+                                <li><a href="/business-central/legacy-erp-migration"><i class="fas fa-angle-right" aria-hidden="true"></i>Legacy ERP Migration</a></li>
+                                <li><a href="/business-central/manufacturing/case-studies"><i class="fas fa-angle-right" aria-hidden="true"></i>Manufacturing Case Studies</a></li>
+                            </ul></li>
+                            <li><a href="/erpnext" class="dropdown-item-custom">
+                                <i class="fas fa-cubes item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>ERPNext</h6>
+                                    <?php /* NAV 2026-10-03: description hidden <p>Flexible, open-source ERP</p> */ ?>
+                                </div>
+                            </a>
+                            <ul class="domain-subitems">
+                                <li><a href="/erpnext/manufacturing"><i class="fas fa-angle-right" aria-hidden="true"></i>Manufacturing</a></li>
+                                <li><a href="/erpnext/distribution"><i class="fas fa-angle-right" aria-hidden="true"></i>Distribution</a></li>
+                            </ul></li>
+                            <li><a href="/erp-consulting" class="dropdown-item-custom">
+                                <i class="fas fa-handshake item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>ERP Consulting &amp; Implementation</h6>
+                                    <?php /* NAV 2026-10-03: description hidden <p>Choosing, implementing and supporting the right ERP</p> */ ?>
+                                </div>
+                            </a></li>
+                            <li><a href="/business-central-vs-erpnext" class="dropdown-item-custom">
+                                <i class="fas fa-scale-balanced item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Business Central vs ERPNext</h6>
+                                    <?php /* NAV 2026-10-03: previous title/description hidden
+                                    <h6>Compare ERP Solutions</h6>
+                                    <p>Business Central vs ERPNext</p>
+                                    */ ?>
+                                </div>
+                            </a></li>
+                        </ul>
+                        <?php endif; /* end NAV 2026-10-12 hidden block */ ?>
+                        <ul class="dropdown-menu erp-dropdown erp-menu">
+                            <li class="erp-menu-heading"><i class="fas fa-bars-staggered" aria-hidden="true"></i>ERP Solutions</li>
+                            <li class="erp-group">
+                                <a href="/microsoft-dynamics-365-business-central" class="erp-parent"><i class="fas fa-angle-right" aria-hidden="true"></i>Microsoft Dynamics 365 Business Central</a>
+                                <ul class="erp-children">
+                                    <li><a href="/business-central/manufacturing">Manufacturing</a></li>
+                                    <li><a href="/business-central/quickbooks-migration">QuickBooks Migration</a></li>
+                                    <?php /* NAV 2026-10-12: not in the new layout (Legacy ERP Migration moved to a standalone link below)
+                                    <li><a href="/business-central/manufacturing/case-studies">Manufacturing Case Studies</a></li>
+                                    */ ?>
+                                </ul>
+                            </li>
+                            <li class="erp-group">
+                                <a href="/erpnext" class="erp-parent"><i class="fas fa-angle-right" aria-hidden="true"></i>ERPNext</a>
+                                <ul class="erp-children">
+                                    <li><a href="/erpnext/manufacturing">Manufacturing</a></li>
+                                    <li><a href="/erpnext/distribution">Distribution</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="/erp-consulting" class="erp-standalone">ERP Consulting &amp; Implementation</a></li>
+                            <li><a href="/business-central/legacy-erp-migration" class="erp-standalone">Legacy ERP Migration</a></li>
+                            <li><a href="/business-central-vs-erpnext" class="erp-standalone">Business Central vs ERPNext</a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Industries Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Industries
+                        </a>
+                        <ul class="dropdown-menu industries-dropdown">
+                            <li><a href="/industrial-engineering.php" class="dropdown-item-custom">
+                                <i class="fas fa-industry item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Manufacturing</h6>
+                                </div>
+                            </a>
+                            <ul class="domain-subitems">
+                                <li><a href="/extrution.php"><i class="fas fa-angle-right" aria-hidden="true"></i>Extrusion ERP</a></li>
+                            </ul></li>
+                            <li><a href="/distribution" class="dropdown-item-custom">
+                                <i class="fas fa-truck item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Distribution</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/construction.php" class="dropdown-item-custom">
+                                <i class="fas fa-hard-hat item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Construction</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/retail.php" class="dropdown-item-custom">
+                                <i class="fas fa-shopping-cart item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Retail</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/health_care.php" class="dropdown-item-custom">
+                                <i class="fas fa-hospital item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Healthcare</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/livestock.php" class="dropdown-item-custom">
+                                <i class="fas fa-cow item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Dairy &amp; Agro</h6>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Digital Solutions Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Digital Solutions
+                        </a>
+                        <ul class="dropdown-menu digital-dropdown">
+                            <li><a href="/business-applications" class="dropdown-item-custom">
+                                <i class="fas fa-mobile-screen-button item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Business Applications</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/analytics-bi" class="dropdown-item-custom">
+                                <i class="fas fa-chart-line item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Analytics &amp; BI</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/artificial_intelligence.php" class="dropdown-item-custom">
+                                <i class="fas fa-robot item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>AI &amp; Automation</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/dealer-customer-portals" class="dropdown-item-custom">
+                                <i class="fas fa-users item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Dealer &amp; Customer Portals</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/integrations" class="dropdown-item-custom">
+                                <i class="fas fa-plug item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Integrations</h6>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- Our Work Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            Our Work
+                        </a>
+                        <ul class="dropdown-menu work-dropdown">
+                            <li><a href="/case-studies" class="dropdown-item-custom">
+                                <i class="fas fa-briefcase item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Case Studies / Success Stories</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/blogs.php" class="dropdown-item-custom">
+                                <i class="fas fa-newspaper item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Blogs</h6>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <!-- About Us Dropdown -->
+                    <li class="nav-item dropdown">
+                        <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                            About Us
+                        </a>
+                        <ul class="dropdown-menu about-dropdown">
+                            <li><a href="/about.php" class="dropdown-item-custom">
+                                <i class="fas fa-building item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>About EasyCloud</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/our_process.php" class="dropdown-item-custom">
+                                <i class="fas fa-diagram-project item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Our Process</h6>
+                                </div>
+                            </a></li>
+                            <li><a href="/careers" class="dropdown-item-custom">
+                                <i class="fas fa-user-tie item-icon" aria-hidden="true"></i>
+                                <div class="item-info">
+                                    <h6>Careers</h6>
+                                </div>
+                            </a></li>
+                        </ul>
+                    </li>
+
+                    <?php /* NAV 2026-10-03: previous menus hidden (Domains, Analytics, AI, Apps, Firewall, Our Processes, About Us link; Blogs restored under Our Work). Kept for future use; remove this comment wrapper to restore.
                     <!-- Domains Dropdown -->
                     <li class="nav-item dropdown">
                         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -360,12 +700,16 @@ body {
                         <ul class="dropdown-menu domains-dropdown">
                             <div class="domains-grid">
                                 <li><a href="/industrial-engineering.php" class="dropdown-item-custom">
-                                    <i class="fas fa-industry item-icon"></i>
+                                    <i class="fas fa-industry item-icon" aria-hidden="true"></i>
                                     <div class="item-info">
-                                        <h6>Industrial Engineering</h6>
+                                        <h6>Manufacturing</h6>
                                         <p>Make industrial processes more efficient and effective.</p>
                                     </div>
-                                </a></li>
+                                </a>
+                                <ul class="domain-subitems">
+                                    <li><a href="/extrution.php"><i class="fas fa-angle-right" aria-hidden="true"></i>Extrusion ERP</a></li>
+                                    <li><a href="/business-central/manufacturing"><i class="fas fa-angle-right" aria-hidden="true"></i>Manufacturing Capabilities in Business Central</a></li>
+                                </ul></li>
                                 <li><a href="/bfsi.php" class="dropdown-item-custom">
                                     <i class="fas fa-landmark item-icon"></i>
                                     <div class="item-info">
@@ -413,13 +757,6 @@ body {
                                     <div class="item-info">
                                         <h6>Livestock & Feed</h6>
                                         <p>Improve livestock management and make feeding more efficient.</p>
-                                    </div>
-                                </a></li>
-                                <li><a href="/extrution.php" class="dropdown-item-custom">
-                                    <i class="fas fa-cogs item-icon"></i>
-                                    <div class="item-info">
-                                        <h6>Extrusion ERP</h6>
-                                        <p>Enhance your production efficiency and achieve superior product quality.</p>
                                     </div>
                                 </a></li>
                             </div>
@@ -518,10 +855,10 @@ body {
                     <li class="nav-item"><a class="nav-link" href="/firewall.php">Firewall</a></li>
 
                     <!-- Regular Nav Items -->
-                    <li class="nav-item"><a class="nav-link" href="/blogs.php">Blogs</a></li>
                     <li class="nav-item"><a class="nav-link" href="/our_process.php">Our Processes</a></li>
                     <li class="nav-item"><a class="nav-link" href="/about.php">About Us</a></li>
-                    
+                    */ ?>
+
 
                 </ul>
 
@@ -539,16 +876,16 @@ body {
 
     <!-- Bootstrap JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    
+
     <script>
         // Add hover functionality for desktop
         document.addEventListener('DOMContentLoaded', function() {
             const dropdowns = document.querySelectorAll('.easycloud-navbar .dropdown');
-            
+
             dropdowns.forEach(dropdown => {
                 const dropdownToggle = dropdown.querySelector('.dropdown-toggle');
                 const dropdownMenu = dropdown.querySelector('.dropdown-menu');
-                
+
                 // Only add hover on desktop
                 if (window.innerWidth >= 992) {
                     dropdown.addEventListener('mouseenter', function() {
@@ -556,7 +893,7 @@ body {
                         dropdownMenu.classList.add('show');
                         dropdownToggle.setAttribute('aria-expanded', 'true');
                     });
-                    
+
                     dropdown.addEventListener('mouseleave', function() {
                         dropdownToggle.classList.remove('show');
                         dropdownMenu.classList.remove('show');

@@ -28,10 +28,58 @@
     <meta property="twitter:description" content="EasyCloud is a next-gen cloud ERP and automation platform that simplifies operations, drives growth, and empowers smarter business decisions across industries.">
     <meta property="twitter:image" content="https://easycloudsoftware.com/images/dashboard_logo.avif">
     
+    <!-- Structured data: organisation details as shown in the site footer -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Organization",
+      "name": "EasyCloud",
+      "url": "https://easycloudsoftware.com/",
+      "logo": "https://easycloudsoftware.com/images/main_logo.svg",
+      "email": "connect@easycloudsoftware.com",
+      "foundingDate": "2011",
+      "address": [
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "2nd Floor, BabuKhan Millenium Center, Somajiguda",
+          "addressLocality": "Hyderabad",
+          "addressRegion": "Telangana",
+          "postalCode": "500082",
+          "addressCountry": "IN"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "23600 Mercantile Road, Suite C-100",
+          "addressLocality": "Beachwood",
+          "addressRegion": "OH",
+          "postalCode": "44122",
+          "addressCountry": "US"
+        },
+        {
+          "@type": "PostalAddress",
+          "streetAddress": "Saif Zone",
+          "addressLocality": "Sharjah",
+          "addressCountry": "AE"
+        }
+      ],
+      "contactPoint": [
+        { "@type": "ContactPoint", "telephone": "+91-98480-27830", "contactType": "sales", "areaServed": "IN" },
+        { "@type": "ContactPoint", "telephone": "+1-603-233-3940", "contactType": "sales", "areaServed": "US" },
+        { "@type": "ContactPoint", "telephone": "+971-50-475-4423", "contactType": "sales", "areaServed": "AE" }
+      ],
+      "sameAs": [
+        "https://x.com/Easycloud_info",
+        "https://www.linkedin.com/company/easycloudin/",
+        "https://www.youtube.com/@easycloud_info",
+        "https://www.instagram.com/easycloud_info/"
+      ]
+    }
+    </script>
+
     <!-- Favicon -->
     <link rel="icon" type="image/png" href="images/E.png">
     <link rel="stylesheet" href="styles.css">
-    <link rel="preload" href="images/dashboard_logo.avif" as="image" type="image/avif">
+    <link rel="preload" href="images/ecs-hero.avif" as="image" type="image/avif" fetchpriority="high">
     <link rel="preload" href="marquee.css" as="style">
     <link rel="dns-prefetch" href="//cdnjs.cloudflare.com">
     <link rel="preconnect" href="https://cdnjs.cloudflare.com">
@@ -2701,7 +2749,540 @@ body {
       }
     }
     
+
+    /* ===== Hero: title, sub title, CTAs, trust line ===== */
+    .hero-content h1 .dark-text,
+    .hero-content h1 .blue-text {
+      display: block;
+    }
+    .hero-content .hero-subtitle {
+      font-size: 1.3rem;
+      font-weight: 600;
+      color: #2c3e50;
+      margin-bottom: 1rem;
+    }
+    .hero-cta-group {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    a.cta-button {
+      display: inline-block;
+      text-decoration: none;
+      border: 2px solid #3498db;
+    }
+    a.cta-button:hover {
+      color: #fff;
+      border-color: #2980b9;
+    }
+    a.cta-button.cta-button-outline {
+      background: transparent;
+      color: #3498db;
+    }
+    a.cta-button.cta-button-outline:hover {
+      background: #3498db;
+      color: #fff;
+    }
+    .hero-trust-line {
+      list-style: none;
+      padding-left: 0;
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 1.5rem;
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: #2c3e50;
+    }
+    .hero-trust-line li:not(:last-child)::after {
+      content: "|";
+      margin: 0 0.6rem;
+      color: #3498db;
+    }
+    @media screen and (max-width: 992px) {
+      .hero-cta-group,
+      .hero-trust-line {
+        justify-content: center;
+      }
+    }
+
+    /* ===== Choose the Right ERP ===== */
+    .erp-choice-section {
+      padding: 5rem 0;
+      background-color: #fff;
+      scroll-margin-top: 100px;
+    }
+    .erp-choice-container,
+    .erp-core-container,
+    .proof-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 2rem;
+    }
+    .erp-choice-cards {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .erp-choice-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 2.5rem;
+      background: #fff;
+      border-radius: 12px;
+      border-top: 4px solid #3498db;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .erp-choice-card:hover {
+      transform: translateY(-5px);
+    }
+    .erp-choice-card h3 {
+      font-size: 1.6rem;
+      color: #0B1B35;
+      font-weight: 600;
+    }
+    .erp-choice-card p {
+      font-size: 1.1rem;
+      color: #666;
+      line-height: 1.6;
+      flex: 1;
+    }
+    .know-more-btn {
+      text-decoration: none;
+    }
+    a.know-more-btn:hover {
+      color: #fff;
+    }
+    .erp-choice-compare {
+      text-align: center;
+      margin-top: 2.5rem;
+      font-size: 1.1rem;
+      color: #666;
+    }
+    .erp-choice-compare a {
+      color: #3498db;
+      font-weight: 600;
+      text-decoration: none;
+      margin-left: 0.25rem;
+    }
+    .erp-choice-compare a:hover {
+      text-decoration: underline;
+    }
+
+    /* ===== ERP at the Core ===== */
+    .erp-core-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+    .erp-core-visual {
+      position: relative;
+      width: 560px;
+      height: 560px;
+      max-width: 100%;
+      margin: 0 auto;
+    }
+    .erp-core-visual::before {
+      content: "";
+      position: absolute;
+      inset: 70px;
+      border: 2px dashed rgba(52, 152, 219, 0.4);
+      border-radius: 50%;
+    }
+    .erp-core-hub {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 150px;
+      height: 150px;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      background: linear-gradient(135deg, #1a4b7c 0%, #0d2b4d 100%);
+      box-shadow: 0 0 0 12px rgba(52, 152, 219, 0.15);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .erp-core-hub span {
+      color: #fff;
+      font-size: 2.2rem;
+      font-weight: 700;
+      letter-spacing: 2px;
+    }
+    .erp-core-node {
+      position: absolute;
+      width: 150px;
+      transform: translate(-50%, -50%);
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+      text-align: center;
+      padding: 1rem 0.75rem;
+      background: #fff;
+      border-radius: 12px;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+    }
+    .erp-core-node h3 {
+      font-size: 0.95rem;
+      color: #0B1B35;
+      font-weight: 600;
+      line-height: 1.3;
+    }
+    /* six nodes evenly placed around the ring (radius 210px from centre) */
+    .erp-core-node.node-1 { top: calc(50% - 210px); left: 50%; }
+    .erp-core-node.node-2 { top: calc(50% - 105px); left: calc(50% + 182px); }
+    .erp-core-node.node-3 { top: calc(50% + 105px); left: calc(50% + 182px); }
+    .erp-core-node.node-4 { top: calc(50% + 210px); left: 50%; }
+    .erp-core-node.node-5 { top: calc(50% + 105px); left: calc(50% - 182px); }
+    .erp-core-node.node-6 { top: calc(50% - 105px); left: calc(50% - 182px); }
+    .erp-core-text {
+      text-align: center;
+      font-size: 1.2rem;
+      color: #2c3e50;
+      font-weight: 500;
+      max-width: 700px;
+      margin: 3rem auto 0;
+    }
+    @media (max-width: 768px) {
+      .erp-core-visual {
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 1rem;
+      }
+      .erp-core-visual::before {
+        display: none;
+      }
+      .erp-core-hub,
+      .erp-core-node,
+      .erp-core-node[class*="node-"] {
+        position: static;
+        transform: none;
+        width: auto;
+      }
+      .erp-core-hub {
+        grid-column: 1 / -1;
+        justify-self: center;
+        width: 120px;
+        height: 120px;
+        margin-bottom: 1rem;
+      }
+    }
+
+    /* ===== Built Around Your Industry ===== */
+    .industries-section {
+      background-color: #fff;
+    }
+    .domains-cards.industries-cards {
+      grid-template-columns: repeat(3, 1fr);
+      justify-items: center;
+    }
+    .industries-section .know-more-btn,
+    .proof-section .know-more-btn {
+      color: #fff !important;
+    }
+    @media screen and (max-width: 1200px) {
+      .domains-cards.industries-cards {
+        grid-template-columns: repeat(2, 1fr);
+      }
+    }
+    @media screen and (max-width: 768px) {
+      .domains-cards.industries-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== Why EasyCloud: two paragraphs under Our Approach ===== */
+    .vision-text p + p {
+      margin-top: 0.75rem;
+    }
+
+    /* ===== Proof / Case Studies ===== */
+    .proof-section {
+      padding: 5rem 0;
+      background-color: #f8f9fa;
+    }
+    .proof-cards {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .proof-card {
+      display: flex;
+      flex-direction: column;
+      align-items: flex-start;
+      gap: 1rem;
+      padding: 2rem;
+      background: #fff;
+      border-radius: 12px;
+      border-top: 4px solid #3498db;
+      box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+      transition: transform 0.3s ease;
+    }
+    .proof-card:hover {
+      transform: translateY(-5px);
+    }
+    .proof-card h3 {
+      font-size: 1.4rem;
+      color: #0B1B35;
+      font-weight: 600;
+    }
+    .proof-card p {
+      font-size: 1.05rem;
+      color: #666;
+      line-height: 1.5;
+    }
+    @media (max-width: 992px) {
+      .erp-choice-cards,
+      .proof-cards {
+        grid-template-columns: 1fr;
+      }
+    }
+
+    /* ===== Homepage updates 2026-10-01 (round 2) ===== */
+    /* Built Around Your Industry: theme background, white cards, hover animation */
+    .domains-section.industries-section {
+      background-color: #FFFFFF;
+    }
+    .industries-cards .domain-card {
+      background: #fff;
+      border-radius: 12px;
+      overflow: hidden;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .industries-cards .domain-card img {
+      transition: transform 0.4s ease;
+    }
+    .industries-cards a:hover .domain-card,
+    .industries-cards > div:hover .domain-card {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 34px rgba(26, 43, 78, 0.18);
+    }
+    .industries-cards a:hover .domain-card img,
+    .industries-cards > div:hover .domain-card img {
+      transform: scale(1.06);
+    }
+    .industries-section a.know-more-btn,
+    .industries-section a.know-more-btn *,
+    .industries-section a.know-more-btn:visited,
+    .industries-section a.know-more-btn:hover,
+    .industries-section a.know-more-btn:active {
+      color: #fff !important;
+    }
+
+    /* Real Business Problems: theme background */
+    .proof-section {
+      background-color: #FFFFFF;
+    }
+
+    /* Domains, Analytics, AI, Apps: intro text spans the full container width */
+    .domains-section:not(.industries-section) .section-header p,
+    section.analytics-section .section-header p,
+    .ai-section .section-header p,
+    .apps-section .section-header p {
+      max-width: 100%;
+    }
+
+    /* ===== Homepage updates 2026-10-01 (round 3) ===== */
+    /* Hero: text and image columns in golden ratio (1 : 1.618), image fills its column */
+    @media screen and (min-width: 993px) {
+      .hero .hero-container {
+        max-width: calc(600px + 4rem + 971px);
+      }
+      .hero .hero-container .hero-content {
+        flex: 0 1 600px;
+        min-width: 460px;
+      }
+      .hero .hero-container .hero-image {
+        flex: 0 1 971px;
+      }
+      .hero .hero-image .main-image {
+        max-width: 100%;
+      }
+    }
+
+    /* Built Around Your Industry: card height follows its content */
+    .industries-cards > a,
+    .industries-cards > div {
+      display: flex;
+    }
+    .industries-cards .domain-card {
+      height: auto;
+    }
+    .industries-cards > div .domain-card p {
+      color: inherit;
+    }
+
+    /* Our Domains: white cards with hover lift */
+    .domains-section:not(.industries-section) .domain-card {
+      background-color: #FFFFFF;
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+    .domains-section:not(.industries-section) a:hover .domain-card {
+      transform: translateY(-8px);
+      box-shadow: 0 14px 34px rgba(26, 43, 78, 0.18);
+    }
+
+    /* ===== Audit fixes 2026-10-01 (in-scope sections only) ===== */
+    /* Hero: picture wrapper keeps the image column behaviour; CTA contrast (WCAG AA) */
+    .hero .hero-image picture { display: contents; }
+    a.cta-button {
+      background: #3498db;
+      border-color: #3498db;
+      color: #0b1b35;
+    }
+    a.cta-button:hover,
+    a.cta-button:focus-visible {
+      background: #45aaf2;
+      border-color: #45aaf2;
+      color: #0b1b35;
+    }
+    a.cta-button.cta-button-outline {
+      background: transparent;
+      border-color: #3498db;
+      color: #1a4b7c;
+    }
+    a.cta-button.cta-button-outline:hover,
+    a.cta-button.cta-button-outline:focus-visible {
+      background: #3498db;
+      border-color: #3498db;
+      color: #0b1b35;
+    }
+    a.cta-button:focus-visible,
+    .erp-choice-compare a:focus-visible {
+      outline: 2px solid #1a2b4e;
+      outline-offset: 3px;
+    }
+    .hero-trust-line { font-size: 1rem; }
+    @media screen and (max-width: 576px) {
+      .hero-cta-group a.cta-button {
+        flex: 1 1 100%;
+        text-align: center;
+      }
+    }
+    /* Choose the Right ERP: compare link contrast */
+    .erp-choice-compare a { color: #1a4b7c; }
+
+    /* Why EasyCloud: one H1 per page; eyebrow, title and stats keep their look */
+    .vision-section .vision-header p.vision-eyebrow {
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+      font-size: 1.2rem;
+      font-weight: 700;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      margin: 0 0 0.5rem;
+      color: #45aaf2;
+    }
+    .vision-section .vision-header i { color: #45aaf2; }
+    .vision-section .vision-content h2.vision-title {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      font-size: 2.8rem;
+      line-height: 1.2;
+      margin: 0 0 2rem;
+      font-weight: 600;
+      letter-spacing: normal;
+      color: #fff;
+    }
+    .vision-section .stat-card p.stat-number {
+      font-family: 'Poppins', 'Segoe UI', Arial, sans-serif;
+      font-size: 2.5rem;
+      font-weight: 800;
+      line-height: 1.2;
+      letter-spacing: 0.01em;
+      margin: 0 0 0.5rem;
+      color: #fff;
+    }
+    @media (max-width: 992px) {
+      .vision-section .vision-content h2.vision-title { font-size: 2.4rem; }
+    }
+    @media (max-width: 768px) {
+      .vision-section .vision-content h2.vision-title { font-size: 2rem; }
+    }
+
+    /* Industries and Domains cards: body text at 16px */
+    .domains-section .domain-card p { font-size: 1rem; }
+
+    /* Respect reduced-motion for the in-scope hover effects */
+    @media (prefers-reduced-motion: reduce) {
+      .erp-choice-card,
+      .proof-card,
+      .stat-card,
+      .industries-cards .domain-card,
+      .industries-cards .domain-card img,
+      .domains-section:not(.industries-section) .domain-card,
+      a.cta-button {
+        transition: none;
+      }
+      .erp-choice-card:hover,
+      .proof-card:hover,
+      .stat-card:hover,
+      .industries-cards a:hover .domain-card,
+      .industries-cards > div:hover .domain-card,
+      .industries-cards a:hover .domain-card img,
+      .industries-cards > div:hover .domain-card img,
+      .domains-section:not(.industries-section) a:hover .domain-card {
+        transform: none;
+      }
+    }
+
+    /* ADDED 2026-10-07: logo strip now has 32 logos (was 13); slower loop so it scrolls at about the same speed as before */
+    .marquee-section .marquee-track {
+        animation-duration: 98s;
+    }
+
+    /* ===================================================================
+       ADDED 2026-10-09: centred images, card hover and scroll animations
+       in the style of the /manufacturing page. Text content unchanged.
+       =================================================================== */
+
+/* Scroll-in animation, same pattern as the /manufacturing page (uses the separate
+   translate property so card hover transforms still work) */
+.mfx-js .mfx-reveal {
+  opacity: 0;
+  translate: 0 26px;
+  transition: opacity 0.7s ease var(--d, 0s), translate 0.7s ease var(--d, 0s),
+              transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, background-color 0.3s ease;
+}
+.mfx-js .mfx-reveal.is-visible { opacity: 1; translate: 0 0; }
+@media (prefers-reduced-motion: reduce) {
+  .mfx-js .mfx-reveal { opacity: 1; translate: 0 0; transition: none; }
+}
+
+    /* Images centred inside their columns and cards */
+    .hero .hero-container .hero-image { display: flex; justify-content: center; align-items: center; }
+    .hero .hero-image .main-image { margin-left: auto; margin-right: auto; }
+    .marquee-section .marquee-img { object-position: center; }
+    .industries-cards .domain-card img,
+    .proof-section .proof-card img,
+    .testimonials-section .testimonial-image { object-position: center; margin-left: auto; margin-right: auto; display: block; }
+    .erp-choice-card .feature-icon { margin-left: auto; margin-right: auto; display: flex; align-items: center; justify-content: center; }
+    .erp-choice-card .feature-icon img { object-position: center; }
+    .vision-section .vision-content img.idx-vision-img { margin: 1.5rem auto; box-shadow: 0 16px 34px rgba(11,27,53,0.12); }
+    .erp-core-section img.idx-core-img { box-shadow: 0 16px 34px rgba(11,27,53,0.12); }
+    .erp-core-section .erp-core-node .feature-icon { display: flex; align-items: center; justify-content: center; margin-left: auto; margin-right: auto; }
+    /* Card hover (same lift and border as the /manufacturing cards) */
+    .erp-choice-section .erp-choice-card,
+    .proof-section .proof-card {
+      transition: transform 0.3s ease, box-shadow 0.3s ease, border-color 0.3s ease, opacity 0.7s ease var(--d, 0s), translate 0.7s ease var(--d, 0s);
+    }
+    .erp-choice-section .erp-choice-card:hover,
+    .proof-section .proof-card:hover {
+      transform: translateY(-6px);
+      box-shadow: 0 16px 34px rgba(11,27,53,0.12);
+    }
+    .proof-section .proof-card img { transition: transform 0.6s ease; }
+    .proof-section .proof-card { overflow: hidden; }
+    .proof-section .proof-card:hover img { transform: scale(1.04); }
+    @media (prefers-reduced-motion: reduce) {
+      .erp-choice-section .erp-choice-card:hover,
+      .proof-section .proof-card:hover,
+      .proof-section .proof-card:hover img { transform: none; }
+    }
     </style>
+    <script>document.documentElement.classList.add('mfx-js');</script>
 </head>
 <body>
     <?php include 'nav_bar.php'; ?>
@@ -2712,24 +3293,28 @@ body {
         <div class="hero-container">
             <div class="hero-content">
                 <h1>
-                    <span class="dark-text">BUSINESS TECHNOLOGY</span><br>
-                    <span class="dark-text">SOLUTIONS FOR</span><br>
-                    <span class="animated-text">
-                        <span class="word">PROGRESS</span>
-                        <span class="word">BOOST</span>
-                        <span class="word">UPLIFT</span>
-                        <span class="word">GROWTH</span>
-                    </span>
+                    <span class="dark-text">ERP &amp; Digital Transformation Solutions</span>
+                    <span class="blue-text">Built Around Your Business</span>
                 </h1>
-                <p>Empower your enterprise with cloud-based, AI-driven, and ERP-integrated solutions, tailored to your goals and built for long-term success.
-EasyCloud delivers scalable technology, seamless automation, and proven implementation expertise that drives real business progress.
-</p>
-                <a href="contact.php">
-                <button class="cta-button">Book A Demo</button>
-                </a>
+                <p class="hero-subtitle">Implement the right ERP. Connect your operations. Automate what comes next.</p>
+                <p>EasyCloud helps growing businesses transform operations with Microsoft Dynamics 365 Business Central, ERPNext, business applications, analytics and automation.</p>
+                <div class="hero-cta-group">
+                    <a href="contact.php" class="cta-button">Talk to an ERP Consultant</a>
+                    <a href="#erp-solutions" class="cta-button cta-button-outline">Explore ERP Solutions</a>
+                </div>
+                <ul class="hero-trust-line">
+                    <li>ERP Expertise Since 2011</li>
+                    <li>Microsoft Partner</li>
+                    <li>ERPNext Expertise</li>
+                    <li>Manufacturing &amp; Industry Experience</li>
+                </ul>
             </div>
             <div class="hero-image">
-                <img src="images/ecs hero.jpeg" alt="Analytics Dashboard" class="main-image" fetchpriority="high" loading="eager">
+                <picture>
+                    <source srcset="images/ecs-hero.avif" type="image/avif">
+                    <source srcset="images/ecs-hero.webp" type="image/webp">
+                    <img src="images/ecs hero.jpeg" alt="EasyCloud cloud ERP analytics dashboard with sales, finance and operations reports" class="main-image" width="1257" height="864" fetchpriority="high" loading="eager" decoding="async">
+                </picture>
                 
             </div>
         </div>
@@ -2747,40 +3332,255 @@ EasyCloud delivers scalable technology, seamless automation, and proven implemen
             <div class="marquee-track">
                 <!-- First set of images -->
                 <div class="marquee-content">
-                    <img src="images/axiom.svg" alt="Axiom" class="marquee-img" width="120" height="60">
-                    <img src="images/bankabio.avif" alt="Bankabio" class="marquee-img" width="120" height="60">
-                    <img src="images/dodla.avif" alt="Dodla" class="marquee-img" width="120" height="60">
-                    <img src="images/fin_buddy.avif" alt="Fin Buddy" class="marquee-img" width="120" height="60">
-                    <img src="images/htpl.avif" alt="HTPL" class="marquee-img" width="120" height="60">
-                    <img src="images/karachi_bakery.avif" alt="Karachi Bakery" class="marquee-img" width="120" height="60">
-                    <img src="images/m11.svg" alt="M11" class="marquee-img" width="120" height="60">
-                    <img src="images/medijourn.avif" alt="Medijourn" class="marquee-img" width="120" height="60">
-                    <img src="images/sae.svg" alt="SAE" class="marquee-img" width="120" height="60">
-                    <img src="images/aparna.avif" alt="Aparna" class="marquee-img" width="120" height="60">
-                    <img src="images/rnk.avif" alt="RNK" class="marquee-img" width="120" height="60">
-                    <img src="images/excelrate.avif" alt="Excelrate" class="marquee-img" width="120" height="60">
-                    <img src="images/unicorn.avif" alt="Unicorn" class="marquee-img" width="120" height="60">
+                    <img src="images/axiom.svg" alt="Axiom logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bankabio.avif" alt="Bankabio logo" class="marquee-img" width="120" height="60">
+                    <img src="images/dodla.avif" alt="Dodla logo" class="marquee-img" width="120" height="60">
+                    <img src="images/fin_buddy.avif" alt="Fin Buddy logo" class="marquee-img" width="120" height="60">
+                    <img src="images/htpl.avif" alt="HTPL logo" class="marquee-img" width="120" height="60">
+                    <img src="images/karachi_bakery.avif" alt="Karachi Bakery logo" class="marquee-img" width="120" height="60">
+                    <img src="images/m11.svg" alt="M11 logo" class="marquee-img" width="120" height="60">
+                    <img src="images/medijourn.avif" alt="Medijourn logo" class="marquee-img" width="120" height="60">
+                    <img src="images/sae.svg" alt="SAE logo" class="marquee-img" width="120" height="60">
+                    <img src="images/aparna.avif" alt="Aparna logo" class="marquee-img" width="120" height="60">
+                    <img src="images/rnk.avif" alt="RNK logo" class="marquee-img" width="120" height="60">
+                    <img src="images/excelrate.avif" alt="Excelrate logo" class="marquee-img" width="120" height="60">
+                    <img src="images/unicorn.avif" alt="Unicorn logo" class="marquee-img" width="120" height="60">
+                    <!-- ADDED 2026-10-07: 19 new client logos -->
+                    <img src="images/g-pulla-reddy-sweets.webp" alt="G. Pulla Reddy Sweets logo" class="marquee-img" width="120" height="60">
+                    <img src="images/pdp.webp" alt="PDP logo" class="marquee-img" width="120" height="60">
+                    <img src="images/rockwell.webp" alt="Rockwell logo" class="marquee-img" width="120" height="60">
+                    <img src="images/sai-silks-kalamandir.webp" alt="Sai Silks Kalamandir Pvt. Ltd. logo" class="marquee-img" width="120" height="60">
+                    <img src="images/srinivasa-farms.webp" alt="Srinivasa Farms logo" class="marquee-img" width="120" height="60">
+                    <img src="images/svs.webp" alt="SVS logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bppl.webp" alt="BPPL logo" class="marquee-img" width="120" height="60">
+                    <img src="images/tgbc-the-green-box.webp" alt="TGBC (The Green Box) logo" class="marquee-img" width="120" height="60">
+                    <img src="images/nuevosol.webp" alt="Nuevosol logo" class="marquee-img" width="120" height="60">
+                    <img src="images/everest-infra.webp" alt="Everest Infra logo" class="marquee-img" width="120" height="60">
+                    <img src="images/scoops-ice-cream.webp" alt="Scoops Ice Cream logo" class="marquee-img" width="120" height="60">
+                    <img src="images/mtar.webp" alt="MTAR logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bajo-tierra.webp" alt="Bajo Tierra logo" class="marquee-img" width="120" height="60">
+                    <img src="images/kissan-agri.webp" alt="Kissan Agri logo" class="marquee-img" width="120" height="60">
+                    <img src="images/vaidyagrama.webp" alt="Vaidyagrama logo" class="marquee-img" width="120" height="60">
+                    <img src="images/saranya-ashirwad-trust.webp" alt="Saranya (Ashirwad Trust) logo" class="marquee-img" width="120" height="60">
+                    <img src="images/powertex.webp" alt="Powertex logo" class="marquee-img" width="120" height="60">
+                    <img src="images/aashirwad-ayurveda.webp" alt="Aashirwad Ayurveda logo" class="marquee-img" width="120" height="60">
+                    <img src="images/wadi-surgicals.webp" alt="Wadi Surgicals logo" class="marquee-img" width="120" height="60">
                 </div>
                 <!-- Duplicate for seamless loop -->
                 <div class="marquee-content">
-                    <img src="images/axiom.svg" alt="Axiom" class="marquee-img" width="120" height="60">
-                    <img src="images/bankabio.avif" alt="Bankabio" class="marquee-img" width="120" height="60">
-                    <img src="images/dodla.avif" alt="Dodla" class="marquee-img" width="120" height="60">
-                    <img src="images/fin_buddy.avif" alt="Fin Buddy" class="marquee-img" width="120" height="60">
-                    <img src="images/htpl.avif" alt="HTPL" class="marquee-img" width="120" height="60">
-                    <img src="images/karachi_bakery.avif" alt="Karachi Bakery" class="marquee-img" width="120" height="60">
-                    <img src="images/m11.svg" alt="M11" class="marquee-img" width="120" height="60">
-                    <img src="images/medijourn.avif" alt="Medijourn" class="marquee-img" width="120" height="60">
-                    <img src="images/sae.svg" alt="SAE" class="marquee-img" width="120" height="60">
-                    <img src="images/aparna.avif" alt="Aparna" class="marquee-img" width="120" height="60">
-                    <img src="images/rnk.avif" alt="RNK" class="marquee-img" width="120" height="60">
-                    <img src="images/excelrate.avif" alt="Excelrate" class="marquee-img" width="120" height="60">
-                    <img src="images/unicorn.avif" alt="Unicorn" class="marquee-img" width="120" height="60">
+                    <img src="images/axiom.svg" alt="Axiom logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bankabio.avif" alt="Bankabio logo" class="marquee-img" width="120" height="60">
+                    <img src="images/dodla.avif" alt="Dodla logo" class="marquee-img" width="120" height="60">
+                    <img src="images/fin_buddy.avif" alt="Fin Buddy logo" class="marquee-img" width="120" height="60">
+                    <img src="images/htpl.avif" alt="HTPL logo" class="marquee-img" width="120" height="60">
+                    <img src="images/karachi_bakery.avif" alt="Karachi Bakery logo" class="marquee-img" width="120" height="60">
+                    <img src="images/m11.svg" alt="M11 logo" class="marquee-img" width="120" height="60">
+                    <img src="images/medijourn.avif" alt="Medijourn logo" class="marquee-img" width="120" height="60">
+                    <img src="images/sae.svg" alt="SAE logo" class="marquee-img" width="120" height="60">
+                    <img src="images/aparna.avif" alt="Aparna logo" class="marquee-img" width="120" height="60">
+                    <img src="images/rnk.avif" alt="RNK logo" class="marquee-img" width="120" height="60">
+                    <img src="images/excelrate.avif" alt="Excelrate logo" class="marquee-img" width="120" height="60">
+                    <img src="images/unicorn.avif" alt="Unicorn logo" class="marquee-img" width="120" height="60">
+                    <!-- ADDED 2026-10-07: 19 new client logos -->
+                    <img src="images/g-pulla-reddy-sweets.webp" alt="G. Pulla Reddy Sweets logo" class="marquee-img" width="120" height="60">
+                    <img src="images/pdp.webp" alt="PDP logo" class="marquee-img" width="120" height="60">
+                    <img src="images/rockwell.webp" alt="Rockwell logo" class="marquee-img" width="120" height="60">
+                    <img src="images/sai-silks-kalamandir.webp" alt="Sai Silks Kalamandir Pvt. Ltd. logo" class="marquee-img" width="120" height="60">
+                    <img src="images/srinivasa-farms.webp" alt="Srinivasa Farms logo" class="marquee-img" width="120" height="60">
+                    <img src="images/svs.webp" alt="SVS logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bppl.webp" alt="BPPL logo" class="marquee-img" width="120" height="60">
+                    <img src="images/tgbc-the-green-box.webp" alt="TGBC (The Green Box) logo" class="marquee-img" width="120" height="60">
+                    <img src="images/nuevosol.webp" alt="Nuevosol logo" class="marquee-img" width="120" height="60">
+                    <img src="images/everest-infra.webp" alt="Everest Infra logo" class="marquee-img" width="120" height="60">
+                    <img src="images/scoops-ice-cream.webp" alt="Scoops Ice Cream logo" class="marquee-img" width="120" height="60">
+                    <img src="images/mtar.webp" alt="MTAR logo" class="marquee-img" width="120" height="60">
+                    <img src="images/bajo-tierra.webp" alt="Bajo Tierra logo" class="marquee-img" width="120" height="60">
+                    <img src="images/kissan-agri.webp" alt="Kissan Agri logo" class="marquee-img" width="120" height="60">
+                    <img src="images/vaidyagrama.webp" alt="Vaidyagrama logo" class="marquee-img" width="120" height="60">
+                    <img src="images/saranya-ashirwad-trust.webp" alt="Saranya (Ashirwad Trust) logo" class="marquee-img" width="120" height="60">
+                    <img src="images/powertex.webp" alt="Powertex logo" class="marquee-img" width="120" height="60">
+                    <img src="images/aashirwad-ayurveda.webp" alt="Aashirwad Ayurveda logo" class="marquee-img" width="120" height="60">
+                    <img src="images/wadi-surgicals.webp" alt="Wadi Surgicals logo" class="marquee-img" width="120" height="60">
                 </div>
             </div>
         </div>
     </section>
 
+
+    <!-- Choose the Right ERP Section -->
+    <section class="erp-choice-section" id="erp-solutions">
+        <div class="erp-choice-container">
+            <div class="section-header mfx-reveal">
+                <h2>CHOOSE THE RIGHT ERP FOR YOUR BUSINESS</h2>
+            </div>
+            <div class="erp-choice-cards">
+                <div class="erp-choice-card mfx-reveal">
+                    <div class="feature-icon"><img src="images/business-central-logo.png" alt="Microsoft Dynamics 365 Business Central" style="width: 100%; height: 100%; object-fit: contain; padding: 6px; box-sizing: border-box;"></div>
+                    <h3>Microsoft Dynamics 365 Business Central</h3>
+                    <p>A comprehensive cloud ERP connecting finance, sales, purchasing, inventory, manufacturing and operations within the Microsoft ecosystem.</p>
+                    <a href="/microsoft-dynamics-365-business-central" class="know-more-btn">Explore Business Central <i class="fas fa-arrow-right"></i></a>
+                </div>
+                <div class="erp-choice-card mfx-reveal" style="--d: 0.08s;">
+                    <div class="feature-icon"><i class="fas fa-cubes"></i></div>
+                    <h3>ERPNext</h3>
+                    <p>A flexible, open-source ERP that can be configured and extended around your business processes.</p>
+                    <a href="/erpnext" class="know-more-btn">Explore ERPNext <i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <p class="erp-choice-compare mfx-reveal">Not sure which is right for you? <a href="/business-central-vs-erpnext">Compare ERP Solutions <i class="fas fa-arrow-right"></i></a></p>
+        </div>
+    </section>
+
+    <!-- ERP at the Core Section -->
+    <section class="erp-core-section">
+        <div class="erp-core-container">
+            <div class="section-header mfx-reveal">
+                <h2>ERP AT THE CORE. CONNECTED SOLUTIONS AROUND IT.</h2>
+            </div>
+            <div class="erp-core-visual mfx-reveal">
+                <div class="erp-core-hub"><span>ERP</span></div>
+                <div class="erp-core-node node-1"><div class="feature-icon"><i class="fas fa-mobile-alt"></i></div><h3>Mobile Apps</h3></div>
+                <div class="erp-core-node node-2"><div class="feature-icon"><i class="fas fa-users"></i></div><h3>Dealer &amp; Customer Portals</h3></div>
+                <div class="erp-core-node node-3"><div class="feature-icon"><i class="fas fa-industry"></i></div><h3>Shop-Floor Solutions</h3></div>
+                <div class="erp-core-node node-4"><div class="feature-icon"><i class="fas fa-chart-line"></i></div><h3>Analytics &amp; BI</h3></div>
+                <div class="erp-core-node node-5"><div class="feature-icon"><i class="fas fa-robot"></i></div><h3>AI &amp; Automation</h3></div>
+                <div class="erp-core-node node-6"><div class="feature-icon"><i class="fas fa-plug"></i></div><h3>Third-Party Integrations</h3></div>
+            </div>
+            <img class="idx-core-img mfx-reveal" src="images/erp-connected-operations.webp" alt="Operations director overseeing office, production and warehouse connected through one ERP system" style="width: 100%; max-width: 1100px; height: auto; border-radius: 16px; display: block; margin: 2rem auto 0;" width="1200" height="675" loading="lazy" decoding="async">
+            <p class="erp-core-text mfx-reveal">We go beyond ERP to build connected solutions around the way your business actually operates.</p>
+        </div>
+    </section>
+
+    <!-- Built Around Your Industry Section -->
+    <section class="domains-section industries-section">
+        <div class="domains-container">
+            <div class="section-header mfx-reveal">
+                <h2>BUILT AROUND YOUR INDUSTRY</h2>
+            </div>
+            <div class="domains-cards industries-cards">
+                <a href="industrial-engineering.php" class="mfx-reveal industry-featured">
+                    <div class="domain-card">
+                        <img src="images/industrial_eng.avif" alt="Manufacturing industry: ERP for production, inventory and shop-floor operations" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Manufacturing</h3>
+                        <p>Make industrial processes more efficient and effective.</p>
+                    </div>
+                </a>
+                <a href="/distribution" class="mfx-reveal" style="--d: 0.08s;">
+                    <div class="domain-card">
+                        <img src="images/logistics.avif" alt="Distribution industry: ERP for inventory, orders and deliveries" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Distribution</h3>
+                        <p>Streamline inventory, orders and deliveries.</p>
+                    </div>
+                </a>
+                <a href="construction.php" class="mfx-reveal" style="--d: 0.16s;">
+                    <div class="domain-card">
+                        <img src="images/construction.avif" alt="Construction industry: ERP for project and site management" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Construction</h3>
+                        <p>Manage projects better and increase site efficiency</p>
+                    </div>
+                </a>
+                <a href="retail.php" class="mfx-reveal" style="--d: 0.24s;">
+                    <div class="domain-card">
+                        <img src="images/retail.avif" alt="Retail industry: ERP for store operations and customer experience" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Retail</h3>
+                        <p>Optimize operations, elevate customer experience.</p>
+                    </div>
+                </a>
+                <a href="health_care.php" class="mfx-reveal" style="--d: 0.32s;">
+                    <div class="domain-card">
+                        <img src="images/healthcare.avif" alt="Healthcare industry: ERP for patient care and health management" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Healthcare</h3>
+                        <p>Improve patient care and health management.</p>
+                    </div>
+                </a>
+                <a href="livestock.php" class="mfx-reveal" style="--d: 0.40s;">
+                    <div class="domain-card">
+                        <img src="images/livestock.avif" alt="Dairy and agro industry: ERP for livestock and feed operations" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Dairy &amp; Agro</h3>
+                        <p>Improve livestock and feeding efficiency.</p>
+                    </div>
+                </a>
+            </div>
+            <div class="analytics-cta">
+                <a href="#" class="know-more-btn mfx-reveal">Explore Industries <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+    <!-- Why EasyCloud Section -->
+    <section class="vision-section">
+        <div class="vision-container">
+            <div class="vision-content mfx-reveal">
+                <div class="vision-header">
+                    <i class="fas fa-bullseye" aria-hidden="true"></i>
+                    <p class="vision-eyebrow">WHY EASYCLOUD?</p>
+                </div>
+                <h2 class="vision-title">Technology That Fits the Business.<br>Not the Other Way Around.</h2>
+                <img class="idx-vision-img" src="images/easycloud-erp-consultants-team.webp" alt="EasyCloud ERP consultants mapping business processes with a client team" style="width: 100%; max-width: 600px; height: auto; border-radius: 16px; display: block; margin: 1.5rem auto;" width="1200" height="900" loading="lazy" decoding="async">
+                <div class="vision-text">
+                    <h3>Our Approach</h3>
+                    <p>We believe business technology should simplify operations, connect people and processes, and provide the visibility needed to make better decisions.</p>
+                    <p>From ERP implementation to custom applications, analytics and automation, we build solutions around the way our customers actually work.</p>
+                </div>
+                <div class="vision-text">
+                    <h3>Our Commitment</h3>
+                    <p>We work as long-term technology partners—understanding the business first, recommending the right solution and continuing to support it as the organisation grows.</p>
+                </div>
+            </div>
+            <div class="vision-stats">
+                <div class="stat-card mfx-reveal">
+                    <p class="stat-number">55+</p>
+                    <p>Customers</p>
+                </div>
+                <div class="stat-card mfx-reveal" style="--d: 0.08s;">
+                    <p class="stat-number">14+</p>
+                    <p>Years ERP &amp; Technology Experience</p>
+                </div>
+                <div class="stat-card mfx-reveal" style="--d: 0.16s;">
+                    <p class="stat-number">55+</p>
+                    <p>Team Members</p>
+                </div>
+                <div class="stat-card mfx-reveal" style="--d: 0.24s;">
+                    <p class="stat-number">15,000+</p>
+                    <p>Users Supported</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Proof / Case Studies Section -->
+    <section class="proof-section">
+        <div class="proof-container">
+            <div class="section-header mfx-reveal">
+                <h2>Real Business Problems. Practical Technology Solutions.</h2>
+            </div>
+            <div class="proof-cards">
+                <div class="proof-card mfx-reveal">
+                    <img src="images/manufacturing-transformation-erp.webp" alt="Plant manager tracking production and inventory on the shop floor after an ERP transformation" style="width: 100%; height: 180px; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 1rem; display: block;" width="800" height="450" loading="lazy" decoding="async">
+                    <div class="feature-icon"><i class="fas fa-industry"></i></div>
+                    <h3>Manufacturing Transformation</h3>
+                    <p>ERP + production + inventory + shop-floor visibility</p>
+                </div>
+                <div class="proof-card mfx-reveal" style="--d: 0.08s;">
+                    <img src="images/high-volume-distribution-erp.webp" alt="High-volume distribution center processing thousands of orders a day" style="width: 100%; height: 180px; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 1rem; display: block;" width="800" height="450" loading="lazy" decoding="async">
+                    <div class="feature-icon"><i class="fas fa-truck"></i></div>
+                    <h3>High-Volume Distribution</h3>
+                    <p>Managing thousands of transactions efficiently</p>
+                </div>
+                <div class="proof-card mfx-reveal" style="--d: 0.16s;">
+                    <img src="images/dealer-ecosystem-portal.webp" alt="Manufacturer and dealer partners connected through an ERP-linked dealer portal" style="width: 100%; height: 180px; object-fit: cover; object-position: center; border-radius: 12px; margin-bottom: 1rem; display: block;" width="800" height="450" loading="lazy" decoding="async">
+                    <div class="feature-icon"><i class="fas fa-network-wired"></i></div>
+                    <h3>Dealer Ecosystem</h3>
+                    <p>ERP connected to dealer/customer portals</p>
+                </div>
+            </div>
+            <div class="analytics-cta">
+                <a href="/case-studies" class="know-more-btn mfx-reveal">View Our Work <i class="fas fa-arrow-right"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <?php /* HIDDEN 2026-10-03: Our Domains section (commented out, not deleted; to restore, remove this line and the closing PHP comment line after the section)
     <!-- Domains Section -->
     <section class="domains-section">
         <div class="domains-container">
@@ -2792,56 +3592,56 @@ EasyCloud delivers scalable technology, seamless automation, and proven implemen
             <div class="domains-cards">
                 <a href="industrial-engineering.php">
                     <div class="domain-card">
-                        <img src="images/industrial_eng.avif" alt="Industrial Engineering" width="320" height="180">
+                        <img src="images/industrial_eng.avif" alt="Industrial Engineering" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Industrial Engineering</h3>
                         <p>Make industrial processes more efficient and effective.</p>
                     </div>
                 </a>
                 <a href="retail.php">
                     <div class="domain-card">
-                        <img src="images/retail.avif" alt="Retail">
+                        <img src="images/retail.avif" alt="Retail" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Retail</h3>
                         <p>Optimize operations, elevate customer experience.</p>
                     </div>
                 </a>
                 <a href="construction.php">
                     <div class="domain-card">
-                        <img src="images/construction.avif" alt="Construction">
+                        <img src="images/construction.avif" alt="Construction" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Construction</h3>
                         <p>Manage projects better and increase site efficiency</p>
                     </div>
                 </a>
                 <a href="bfsi.php">
                     <div class="domain-card">
-                        <img src="images/bsfi.avif" alt="BFSI">
+                        <img src="images/bsfi.avif" alt="BFSI" width="320" height="180" loading="lazy" decoding="async">
                         <h3>BFSI</h3>
                         <p>Enhance financial services and simplify operations.</p>
                     </div>
                 </a>
                 <a href="energy_and_utilities.php">
                     <div class="domain-card">
-                        <img src="images/energy_utilities.avif" alt="Energy & Utilities">
+                        <img src="images/energy_utilities.avif" alt="Energy & Utilities" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Energy & Utilities</h3>
                         <p>Improve energy and utility services.</p>
                     </div>
                 </a>
                 <a href="livestock.php">
                     <div class="domain-card">
-                        <img src="images/livestock.avif" alt="Livestock & Feed">
+                        <img src="images/livestock.avif" alt="Livestock & Feed" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Livestock & Feed</h3>
                         <p>Improve livestock and feeding efficiency.</p>
                     </div>
                 </a>
                 <a href="education.php">
                     <div class="domain-card">
-                        <img src="images/education.avif" alt="Education">
+                        <img src="images/education.avif" alt="Education" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Education</h3>
                         <p>Make teaching simpler and improve administration.</p>
                     </div>
                 </a>
                 <a href="health_care.php">
                     <div class="domain-card">
-                        <img src="images/healthcare.avif" alt="Healthcare">
+                        <img src="images/healthcare.avif" alt="Healthcare" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Healthcare</h3>
                         <p>Improve patient care and health management.</p>
                     </div>
@@ -2849,7 +3649,9 @@ EasyCloud delivers scalable technology, seamless automation, and proven implemen
             </div>
         </div>
     </section>
+    */ ?>
 
+    <?php /* HIDDEN 2026-10-03: Analytics section (commented out, not deleted; to restore, remove this line and the closing PHP comment line after the section)
     <!-- Analytics Section -->
     <section class="analytics-section" id="analytics">
         <div class="analytics-container">
@@ -2893,7 +3695,9 @@ Enhance performance and customer satisfaction with data-driven insights. EasyClo
             </div>
         </div>
     </section>
+    */ ?>
 
+    <?php /* HIDDEN 2026-10-03: AI section (commented out, not deleted; to restore, remove this line and the closing PHP comment line after the section)
     <!-- AI Section -->
     <section class="ai-section">
         <div class="ai-container">
@@ -2947,7 +3751,9 @@ Enhance performance and customer satisfaction with data-driven insights. EasyClo
             </div>
         </div>
     </section>
+    */ ?>
 
+    <?php /* HIDDEN 2026-10-03: Apps section (commented out, not deleted; to restore, remove this line and the closing PHP comment line after the section)
     <!-- Apps Section -->
     <section class="apps-section">
         <div class="apps-container">
@@ -3008,45 +3814,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
             </div>
         </div>
     </section>
-
-    <!-- Vision & Mission Section -->
-    <section class="vision-section">
-        <div class="vision-container">
-            <div class="vision-content">
-                <div class="vision-header">
-                    <i class="fas fa-bullseye"></i>
-                    <h2>Vision & Mission</h2>
-                </div>
-                <h1>What Ignites Our Drive To Move Forward?</h1>
-                <div class="vision-text">
-                    <h3>Vision:</h3>
-                    <p>Our vision is to make powerful business tools accessible to everyone, without costly fees—enabling businesses to operate seamlessly from a smartphone to a desktop.</p>
-                </div>
-                <div class="vision-text">
-                    <h3>Mission:</h3>
-                    <p>We work in partnership with our clients & our community to achieve excellence and we aim to continue building on our stellar reputation to become a nationally recognized brand in ERP and Enterprise System.</p>
-                </div>
-            </div>
-            <div class="vision-stats">
-                <div class="stat-card">
-                    <h2>40+</h2>
-                    <p>Customer</p>
-                </div>
-                <div class="stat-card">
-                    <h2>12+</h2>
-                    <p>Years Of Experience</p>
-                </div>
-                <div class="stat-card">
-                    <h2>55+</h2>
-                    <p>Team size</p>
-                </div>
-                <div class="stat-card">
-                    <h2>10,000+</h2>
-                    <p>No. of Users</p>
-                </div>
-            </div>
-        </div>
-    </section>
+    */ ?>
 
     <!-- Testimonials Section -->
 <section class="testimonials-section">
@@ -3055,7 +3823,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 1 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/htpl_testimonial.avif" alt="HTPL Testimonial" class="testimonial-image">
+        <img src="images/htpl_testimonial.avif" alt="Video testimonial from Vijay Karai, COO of Hilltop Traders Pvt. Ltd." class="testimonial-image">
         <a class="play-button" href="https://youtu.be/QPntJcGes2k?si=KXJgh3QGqUWLKoRg" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3074,7 +3842,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 2 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/rockwell_testmonial.avif" alt="Rockwell Testimonial" class="testimonial-image">
+        <img src="images/rockwell_testmonial.avif" alt="Video testimonial from Kamakshi K, GM of Rockwell Industries Limited" class="testimonial-image">
         <a class="play-button" href="https://youtu.be/4i8ci-_M8qU?si=6hQSRwVEZN1vzORw" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3093,7 +3861,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 3 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/karachi_bakery.avif" alt="Karachi Bakery Testimonial" class="testimonial-image">
+        <img src="images/karachi_bakery.avif" alt="Video testimonial from Girish, Store Manager at Karachi Bakery" class="testimonial-image">
         <a class="play-button" href="https://youtu.be/6rKctgckcBQ?si=Fi-Pc8yWWvktSByj" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3112,7 +3880,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 4 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/Axiom image.jpg" alt="Axiom Energy Testimonial" class="testimonial-image">
+        <img src="images/Axiom image.jpg" alt="Video testimonial from Mahesh Purohit, Director of Axiom Energy" class="testimonial-image">
         <a class="play-button" href="https://www.youtube.com/watch?v=meXjOITVQ6M" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3133,7 +3901,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 1 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/htpl_testimonial.avif" alt="HTPL Testimonial" class="testimonial-image">
+        <img src="images/htpl_testimonial.avif" alt="Video testimonial from Vijay Karai, COO of Hilltop Traders Pvt. Ltd." class="testimonial-image">
         <a class="play-button" href="https://youtu.be/QPntJcGes2k?si=KXJgh3QGqUWLKoRg" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3152,7 +3920,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 2 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/rockwell_testmonial.avif" alt="Rockwell Testimonial" class="testimonial-image">
+        <img src="images/rockwell_testmonial.avif" alt="Video testimonial from Kamakshi K, GM of Rockwell Industries Limited" class="testimonial-image">
         <a class="play-button" href="https://youtu.be/4i8ci-_M8qU?si=6hQSRwVEZN1vzORw" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3171,7 +3939,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 3 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/karachi_bakery.avif" alt="Karachi Bakery Testimonial" class="testimonial-image">
+        <img src="images/karachi_bakery.avif" alt="Video testimonial from Girish, Store Manager at Karachi Bakery" class="testimonial-image">
         <a class="play-button" href="https://youtu.be/6rKctgckcBQ?si=Fi-Pc8yWWvktSByj" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3190,7 +3958,7 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Card 4 -->
     <div class="testimonial-card">
       <div class="testimonial-image-wrapper">
-        <img src="images/Axiom image.jpg" alt="Axiom Energy Testimonial" class="testimonial-image">
+        <img src="images/Axiom image.jpg" alt="Video testimonial from Mahesh Purohit, Director of Axiom Energy" class="testimonial-image">
         <a class="play-button" href="https://www.youtube.com/watch?v=meXjOITVQ6M" target="_blank" rel="noopener"><i class="fas fa-play"></i></a>
       </div>
       <div class="testimonial-content">
@@ -3215,11 +3983,33 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
     <!-- Experience Section -->
     <section class="experience-section">
         <div class="experience-container">
-            <h2 style="color: #ffffff;">Experience EasyCloud Today</h2>
-            <p>Got questions? Let's get you moving.</p>
-            <a href="contact.php" class="experience-btn">Contact Us <i class="fas fa-arrow-right"></i></a>
+            <h2 class="mfx-reveal" style="color: #ffffff;">Not Sure Where to Start?</h2>
+            <p>Tell us about your business, current systems and challenges. We'll help you identify the right ERP and technology approach.</p>
+            <a href="contact.php" class="experience-btn">BOOK AN ERP ASSESSMENT <i class="fas fa-arrow-right"></i></a>
         </div>
     </section>
+
+
+    <!-- ADDED 2026-10-09: scroll-in animations (same script as the /manufacturing page) -->
+    <script>
+    (function () {
+        var reveals = document.querySelectorAll('.mfx-reveal');
+        var reduce = window.matchMedia && window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+        if (!('IntersectionObserver' in window) || reduce) {
+            reveals.forEach(function (el) { el.classList.add('is-visible'); });
+            return;
+        }
+        var io = new IntersectionObserver(function (entries) {
+            entries.forEach(function (entry) {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('is-visible');
+                    io.unobserve(entry.target);
+                }
+            });
+        }, { threshold: 0.15, rootMargin: '0px 0px -40px 0px' });
+        reveals.forEach(function (el) { io.observe(el); });
+    })();
+    </script>
 
     <?php include 'footer.php'; ?>
 
@@ -3242,7 +4032,6 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
 
   // Preload critical images - Improves LCP (Largest Contentful Paint)
   const criticalImages = [
-    'images/dashboard_logo.avif',
     'images/main_logo.svg'
   ];
   criticalImages.forEach(src => {
@@ -3256,10 +4045,4 @@ Discover a suite of intelligent web and mobile applications built to simplify pr
 </script>
 
 </body>
-</html> 
-
-
-
-
-
-
+</html>

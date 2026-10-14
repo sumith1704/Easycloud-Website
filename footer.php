@@ -266,10 +266,25 @@ footer {
     color: white;
 }
 
+
+/* FOOTER 2 (2026-10-09): sub-links under a parent link, mirroring the nav bar */
+.links-column ul.footer-sub-links {
+    margin: 0.6rem 0 0 0.9rem;
+}
+
+.links-column ul.footer-sub-links li {
+    margin-bottom: 0.5rem;
+}
+
+.links-column ul.footer-sub-links li a {
+    font-size: 0.88rem;
+}
+
         </style>
 </head>
 <body>
 
+    <?php /* ===== FOOTER 1 (hidden 2026-10-09, replaced by Footer 2 below). Kept for future use; remove this comment wrapper to restore.
     <!-- Footer Links Section -->
     <section class="footer-links-section">
         <div class="footer-links-container">
@@ -403,6 +418,160 @@ footer {
             <p>&copy; 2025 EasyCloud. All Rights Reserved.</p>
         </div>
     </section>
+    ===== END FOOTER 1 ===== */ ?>
+
+    <!-- ===== FOOTER 2 (2026-10-09): same design; logo, social links and office blocks kept from Footer 1; link columns follow the nav bar ===== -->
+    <!-- Footer Links Section -->
+    <section class="footer-links-section">
+        <div class="footer-links-container">
+            <!--  Logo and Social Media -->
+             <div class="footer-logo-social">
+                <img src="../images/main_logo.svg" alt="EasyCloud Logo" class="footer-logo" width="80" height="80">
+                <div class="social-icons">
+                    <a href="https://x.com/Easycloud_info" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-twitter"></i></a>
+                    <a href="https://www.linkedin.com/company/easycloudin/posts/?feedView=all" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="https://www.youtube.com/@easycloud_info" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-youtube"></i></a>
+                    <a href="https://www.instagram.com/easycloud_info/" class="social-icon" target="_blank" rel="noopener noreferrer"><i class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+           
+
+            <!-- Office Locations -->
+            <div class="office-locations">
+                <div class="office-card">
+                    <h3>Head Office</h3>
+                    <div class="office-details">
+                        <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
+                        <a href="tel:+919848027830"><i class="fas fa-phone"></i> +91 98480 27830</a>
+                        <?php
+                        // Smart WhatsApp button - shows nearest office number
+                        $whatsappLink = isset($locationDetector) ? $locationDetector->getWhatsAppLink() : 'https://wa.me/919848027830';
+                        $locationText = isset($userLocation) ? " (Detected: {$userLocation['city']})" : "";
+                        ?>
+                        <a href="<?php echo htmlspecialchars($whatsappLink); ?>" target="_blank" rel="noopener" class="whatsapp-chat-link" title="Chat with nearest office<?php echo htmlspecialchars($locationText); ?>">
+                            <span class="whatsapp-icon"><i class="fab fa-whatsapp"></i></span> Chat with us
+                        </a>
+                        <p><i class="fas fa-map-marker-alt"></i> 2nd Floor, BabuKhan Millenium Center, Somajiguda, Hyderabad, Telangana, 500082</p>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <h3>US Office</h3>
+                    <div class="office-details">
+                        <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
+                        <a href="tel:+16032333940"><i class="fas fa-phone"></i> +1 (603) 233-3940</a>
+                        <p><i class="fas fa-map-marker-alt"></i> 23600 Mercantile Road, Suite C-100, Beachwood, OH 44122</p>
+                    </div>
+                </div>
+
+                <div class="office-card">
+                    <h3>UAE Office</h3>
+                    <div class="office-details">
+                        <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
+                        <a href="tel:+97150475442"><i class="fas fa-phone"></i> +971 50 475 4423</a>
+                        <p><i class="fas fa-map-marker-alt"></i> Saif Zone - Sharjah - United Arab Emirates</p>
+                    </div>
+                </div>
+
+                <!-- <div class="office-card">
+                    <h3>Australia Office</h3>
+                    <div class="office-details">
+                        <a href="mailto:connect@easycloudsoftware.com"><i class="fas fa-envelope"></i> connect@easycloudsoftware.com</a>
+                        <a href="tel:+61421979860"><i class="fas fa-phone"></i> +61421979860</a>
+                        <p><i class="fas fa-map-marker-alt"></i> 79 Queens Parade, Fawkner, VIC, Australia</p>
+                    </div>
+                </div> -->
+            </div>
+ 
+            <!-- Quick Links (Footer 2: mirrors nav_bar.php) -->
+            <div class="quick-links">
+                <div class="links-column">
+                    <h3>ERP Solutions</h3>
+                    <ul>
+                        <li><a href="/microsoft-dynamics-365-business-central">Microsoft Dynamics 365 Business Central</a>
+                            <ul class="footer-sub-links">
+                                <li><a href="/business-central/manufacturing">Manufacturing</a></li>
+                                <li><a href="/business-central/quickbooks-migration">QuickBooks Migration</a></li>
+                                <li><a href="/business-central/legacy-erp-migration">Legacy ERP Migration</a></li>
+                                <li><a href="/business-central/manufacturing/case-studies">Manufacturing Case Studies</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/erpnext">ERPNext</a>
+                            <ul class="footer-sub-links">
+                                <li><a href="/erpnext/manufacturing">Manufacturing</a></li>
+                                <li><a href="/erpnext/distribution">Distribution</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/erp-consulting">ERP Consulting &amp; Implementation</a></li>
+                        <li><a href="/business-central-vs-erpnext">Business Central vs ERPNext</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-column">
+                    <h3>Industries</h3>
+                    <ul>
+                        <li><a href="/industrial-engineering.php">Manufacturing</a>
+                            <ul class="footer-sub-links">
+                                <li><a href="/extrution.php">Extrusion ERP</a></li>
+                            </ul>
+                        </li>
+                        <li><a href="/distribution">Distribution</a></li>
+                        <li><a href="/construction.php">Construction</a></li>
+                        <li><a href="/retail.php">Retail</a></li>
+                        <li><a href="/health_care.php">Healthcare</a></li>
+                        <li><a href="/livestock.php">Dairy &amp; Agro</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-column">
+                    <h3>Digital Solutions</h3>
+                    <ul>
+                        <li><a href="/business-applications">Business Applications</a></li>
+                        <li><a href="/analytics-bi">Analytics &amp; BI</a></li>
+                        <li><a href="/artificial_intelligence.php">AI &amp; Automation</a></li>
+                        <li><a href="/dealer-customer-portals">Dealer &amp; Customer Portals</a></li>
+                        <li><a href="/integrations">Integrations</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-column">
+                    <h3>Our Work</h3>
+                    <ul>
+                        <li><a href="/case-studies">Case Studies / Success Stories</a></li>
+                        <li><a href="/blogs.php">Blogs</a></li>
+                    </ul>
+                </div>
+
+                <div class="links-column">
+                    <h3>About Us</h3>
+                    <ul>
+                        <li><a href="/about.php">About EasyCloud</a></li>
+                        <li><a href="/our_process.php">Our Process</a></li>
+                        <li><a href="/careers">Careers</a></li>
+                        <li><a href="/contact.php">Contact Us</a></li>
+                    </ul>
+                </div>
+
+                <!-- Learning: kept from Footer 1 (same pages, root-relative so they work on nested URLs) -->
+                <div class="links-column">
+                    <h3>Learning</h3>
+                    <ul>
+                        <li><a href="/erp_system.php">ERP Systems</a></li>
+                        <li><a href="/top_erp.php">Top10 ERP</a></li>
+                        <li><a href="/artificial_intelligence.php">Artificial Intelligence</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Copyright Section -->
+    <section class="copyright-section">
+        <div class="copyright-container">
+            <p>&copy; <?php echo date('Y'); ?> EasyCloud. All Rights Reserved.</p>
+        </div>
+    </section>
+    <!-- ===== END FOOTER 2 ===== -->
 
 <?php
 /**
