@@ -800,66 +800,44 @@ a.ern-ind-card:focus-visible {
 */ ?>
             <ul class="ern-ind-cards ern-stagger" aria-label="Industries">
                 <li>
-                    <a href="industrial-engineering.php" class="ern-ind-card">
+                    <a href="/manufacturing" class="ern-ind-card">
                         <img src="images/industrial_eng.avif" alt="Manufacturing" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Manufacturing</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
                     </a>
                 </li>
+                <!-- UPDATED 2026-10-14: cards now match the Industries dropdown in nav_bar.php (same names, same links).
+                     Removed cards that have no page: Engineering, Extrusion (sub-item of Manufacturing), Publishing, Packaging. -->
                 <li>
-                    <div class="ern-ind-card">
-                        <!-- REPLACED 2026-10-09: <div class="ern-ind-placeholder" aria-hidden="true"><i class="fas fa-gears"></i></div> -->
-                        <img src="images/engineering-industry-erp.webp" alt="Engineers reviewing a machined gearbox in a fabrication workshop that runs on engineering ERP" width="800" height="450" loading="lazy" decoding="async">
-                        <h3>Engineering</h3>
-                        <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
-                    </div>
-                </li>
-                <li>
-                    <a href="/distribution.php" class="ern-ind-card">
+                    <a href="/distribution" class="ern-ind-card">
                         <img src="images/logistics.avif" alt="Distribution" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Distribution</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
                     </a>
                 </li>
                 <li>
-                    <a href="extrution.php" class="ern-ind-card">
-                        <img src="images/extrustion.webp" alt="Extrusion" width="320" height="180" loading="lazy" decoding="async">
-                        <h3>Extrusion</h3>
-                        <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
-                    </a>
-                </li>
-                <li>
-                    <a href="construction.php" class="ern-ind-card">
+                    <a href="/construction.php" class="ern-ind-card">
                         <img src="images/construction.avif" alt="Construction" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Construction</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
                     </a>
                 </li>
                 <li>
-                    <div class="ern-ind-card">
-                        <!-- REPLACED 2026-10-09: <div class="ern-ind-placeholder" aria-hidden="true"><i class="fas fa-book-open"></i></div> -->
-                        <img src="images/publishing-industry-erp.webp" alt="Press operator checking printed pages on a production line at a publishing and printing company" width="800" height="450" loading="lazy" decoding="async">
-                        <h3>Publishing</h3>
+                    <a href="/retail.php" class="ern-ind-card">
+                        <img src="images/retail.avif" alt="Retail" width="320" height="180" loading="lazy" decoding="async">
+                        <h3>Retail</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
-                    </div>
+                    </a>
                 </li>
                 <li>
-                    <div class="ern-ind-card">
-                        <!-- REPLACED 2026-10-09: <div class="ern-ind-placeholder" aria-hidden="true"><i class="fas fa-box"></i></div> -->
-                        <img src="images/packaging-industry-erp.webp" alt="Operator inspecting corrugated boxes on a packaging production line managed with ERP" width="800" height="450" loading="lazy" decoding="async">
-                        <h3>Packaging</h3>
-                        <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
-                    </div>
-                </li>
-                <li>
-                    <a href="health_care.php" class="ern-ind-card">
+                    <a href="/health_care.php" class="ern-ind-card">
                         <img src="images/healthcare.avif" alt="Healthcare" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Healthcare</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
                     </a>
                 </li>
                 <li>
-                    <a href="livestock.php" class="ern-ind-card">
+                    <a href="/livestock.php" class="ern-ind-card">
                         <img src="images/livestock.avif" alt="Dairy &amp; Agro" width="320" height="180" loading="lazy" decoding="async">
                         <h3>Dairy &amp; Agro</h3>
                         <span class="ern-ind-more">Read More <span aria-hidden="true">&rarr;</span></span>
