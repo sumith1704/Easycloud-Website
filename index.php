@@ -3501,9 +3501,7 @@ body {
                     </div>
                 </a>
             </div>
-            <div class="analytics-cta">
-                <a href="#" class="know-more-btn mfx-reveal">Explore Industries <i class="fas fa-arrow-right"></i></a>
-            </div>
+            <!-- REMOVED 2026-10-14: "Explore Industries" button (href="#" only reloaded the home page) -->
         </div>
     </section>
     <!-- Why EasyCloud Section -->
